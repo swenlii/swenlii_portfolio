@@ -1,0 +1,154 @@
+{
+  "-----------------------------------------main-": "-----------------------------------",
+
+  "title":                     "Swenlii's site (ru)",
+
+  "-----------------------------------------menu-": "-----------------------------------",
+
+  "story":                     "История",
+  "abilities":                 "Навыки",
+  "works":                     "Работы",
+  "blog":                      "Блог",
+  "for print":                 "Печать",
+
+  "------------------------------------languages-": "-----------------------------------",
+
+  "english":                   "English",
+  "russian":                   "Русский",
+
+  "----------------------------------acquaintance-": "----------------------------------",
+
+  "acquaintance-h":            "Привет! Я делаю сайты!",
+  "acquaintance-t-1":          "Причем с нуля от и до. И вот еще какой-то тект, так как я еще не придумала полный тенкст.",
+  "acquaintance-t-2":          "Lorem Ipsum is that it has a ore-of-less normal distribution of letters, as opposed to using here.",
+  "acquaintance-t-3":          "<br>А, и еще кое что. <br><a href='https://www.freepik.com/free-vector/work-from-home-isometric-landing-page_12760684.htm'>Вектор справа был разработан upklyak</a>",
+
+  "-------------------------------------about-me-": "----------------------------------",
+
+  "about-me-h":                "Я разработчик и дизайнер.",
+  "about-me-t-1":              "Привет, меня зовут Дьякова Ирина. Я middle разработчик и начинающий дизайнер.",
+  "about-me-t-2":              "Дизайн начала делать, когда решила сделать портфолио. У меня 6 дизайнов. А разработкой сайтов занимаюсь 6 лет...",
+  "about-me-b":                "Узнать больше",
+
+  "about-me-facts":            "Прикольные факты",
+  "about-me-fact-1":           "Ненавижу автобусы",
+  "about-me-fact-2":           "Читаю мангу, смотрю аниме",
+  "about-me-fact-3":           "Мой код давно мертв",
+  "about-me-fact-4":           "Играю в игры",
+  "about-me-fact-5":           "I hate bus but i love cars!",
+  "about-me-fact-6":           "I love manga and anime",
+  "about-me-fact-7":           "Hello!",
+  "about-me-fact-8":           "Create my world!",
+
+  "---------------------------------what-can-i-do-": "----------------------------------",
+
+  "w-c-i-d-h":                 "What can I do?",
+
+  "w-c-i-d-t-1":               "юмор",
+  "w-c-i-d-t-2":               "что-то еще",
+  "w-c-i-d-t-3":               "учится и учить",
+  "w-c-i-d-t-4":               "услуги",
+  "w-c-i-d-t-5":               "аккуратность",
+  "w-c-i-d-t-6":               "Технологии",
+  "w-c-i-d-t-7":               "Точность",
+  "w-c-i-d-t-8":               "Смех",
+
+  "w-c-i-d-tooltip-1":         "У меня хорошее чувство юмора. Или я так думаю. Не важно.",
+  "w-c-i-d-tooltip-2":         "Какие сайты я делаю?",
+  "w-c-i-d-tooltip-3":         "У меня есть опыт в обучении детей и взрослых. Так же я умею самостоятельно обучатся без учителей. Я быстро усваиваю информацию.",
+  "w-c-i-d-tooltip-4":         "Did you come here for a site? An employee? Find out what I have to offer. Perhaps I have what you are looking for.",
+  "w-c-i-d-tooltip-5":         "I make websites painstakingly. In design, as in code, every little thing is important. Everything should be perfect! By all means!",
+  "w-c-i-d-tooltip-6":         "What technologies have I learned. This does not mean that these are all technologies that I work with. Learning is fun and fast. I will quickly learn a new technology if necessary.",
+  "w-c-i-d-tooltip-7":         "Excellent self-organization. I can organize not only my own work, but also the work of several teammates. I have experience with this.",
+  "w-c-i-d-tooltip-8":         "What else to write ... Hehehe. Maybe a laugh? Just laugh. I'll write something serious later. If I find something",
+
+  "w-c-i-d-services-html":     "And hello again. My world is very ease. And text is:<br><ul><li>design</li><li>front-end</li><li>back-end</li><li>plain</li><li>and more more another</li></ul>",
+  "more-button":               "Больше",
+  "w-c-i-d-tools":             "Мои инструменты:",
+
+  "w-c-i-d-tech-1":            "HTML",
+  "w-c-i-d-tech-2":            "CSS",
+  "w-c-i-d-tech-3":            "JS",
+  "w-c-i-d-tech-4":            "VUE",
+  "w-c-i-d-tech-5":            "NODE",
+  "w-c-i-d-tech-6":            "OTHER",
+
+  "---------------------------------------my-works-": "----------------------------------",
+
+  "one-work-1":                "Сайт #1",
+  "one-work-2":                "Сайт #2",
+  "one-work-3":                "Сайт #3",
+  "one-work-4":                "Сайт #4",
+  "one-work-5":                "Сайт #5",
+  "one-work-6":                "Сайт #6",
+
+  "---------------------------------------reviews-": "----------------------------------",
+
+  "reviews":                   "Reviews",
+  "review-1":                  "Не подражайте другим. Найдите себя и оставайтесь собой, ведь «зависть — это невежество», а «подражание — самоубийство».",
+  "review-p-1":                "Мария Слюдская",
+  "review-2":                  "Carriage quitting securing be appetite it declared. High eyes kept so busy feel call in. Would day nor ask walls known.",
+  "review-p-2":                "Jesse Mckinney",
+  "review-3":                  "Rendered far opinions two yet moderate sex striking. Sufficient motionless compliment by stimulated assistance at. Convinced resolving extensive agreeable in it on as remainder.",
+  "review-p-3":                "Muriel Jimenez",
+
+  "---------------------------------------my-blog-": "----------------------------------",
+
+  "my-blog":                   "Мой блог",
+
+  "article-h-1":               "Свойство position в CSS",
+  "article-t-1":               "Это свойство отвечает за расположение элемента отностительно других элементов...",
+  "article-h-2":               "Position in css",
+  "article-t-2":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
+  "article-h-3":               "Position in css",
+  "article-t-3":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
+  "article-h-4":               "Position in css",
+  "article-t-4":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
+  "article-button":            "больше в блоге",
+
+  "go-to-my-blog":             "Вперед в мой блог!",
+
+  "--------------------------------------contact-me-": "----------------------------------",
+
+  "contact-me-h":              "Заинтересовало? Хотите сайт?",
+
+  "contact-form-h":            "Свяжитесь со мной",
+
+  "contact-form-name":         "Имя:",
+  "contact-form-name-p":       "Иван Иванов",
+  "contact-form-email":        "Email:",
+  "contact-form-email-p":      "ivan@gmail.com",
+  "contact-form-title":        "Заголовок:",
+  "contact-form-title-p":      "Пишу вам впервые",
+  "contact-form-object":       "Тема:",
+  "contact-form-obj-1":        "Разработка",
+  "contact-form-obj-2":        "Дизайн",
+  "contact-form-obj-3":        "Работа",
+  "contact-form-obj-4":        "Проект",
+  "contact-form-obj-5":        "Отзыв",
+  "contact-form-obj-6":        "Другое",
+  "contact-form-text":         "Текст:",
+  "contact-form-text-p":       "Привет!",
+  "contact-form-submit":       "Отправить",
+
+  "contacts-h":                "Контакты",
+  "contacts-my-address":       "Моя локация:",
+  "contact-address":           "Россия, Республика Коми, где-то возле Сыктывкара",
+  "contact-my-email":          "Рабочий email:",
+  "contact=email":             "swenliw@gmail.com",
+  "contact-social-1":          "vk (Дьякова Ирина)",
+  "contact-social-2":          "steam (swenlii)",
+  "contact-social-3":          "twitter (@swenlii)",
+  "contact-social-4":          "instagram (@swenlii)",
+  "contact-social-5":          "github (swenlii)",
+  "contact-social-6":          "google",
+  "contact-social-7":          "(+7) 904 237 47 04",
+  "contact-social-8":          "(+7) 904 237 47 04",
+
+  "-----------------------------------------footer-": "----------------------------------",
+
+  "footer-text":               "Это просто еще один очередной сайт-портфолио. Сделан за месяц с нуля. Вам могу сделать так же, если хотите.",
+  "my-contacts":               "My contacts:",
+  "contact-phone":             "(+7) 904 237 47 04",
+  "terms":                     "Terms and conditions"
+}

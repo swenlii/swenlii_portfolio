@@ -1,0 +1,25 @@
+<header>
+    <a href="/" class="logo">
+        <img>
+        <span class="text">
+            <span class="back"></span>
+            <span>Swenlii</span>
+        </span>
+    </a>
+    <div class="left-side">
+        <nav>
+            <a href="/story"><%=_lt.get('story')%></a>
+            <a href="/abilities"><%=_lt.get('abilities')%></a>
+            <a href="/works"><%=_lt.get('works')%></a>
+            <a href="#"><%=_lt.get('blog')%></a>
+            <a href="#"><%=_lt.get('for print')%></a>
+            <div id="indicator"></div>
+        </nav>
+        <div class="language-switch">
+            <input id="switch-on" class="lan-switch switch-left" onclick="handleClick(this);" name="lang" value="en" type="radio" <% if (lang === 'en' || !lang) {%>checked<%}%>>
+            <label for="switch-on" class="label"><%=_lt.get('english')%></label>
+            <input id="switch-off" class="lan-switch switch-right" onclick="handleClick(this);" name="lang" value="ru" type="radio" <% if (lang === 'ru') {%>checked<%}%>>
+            <label for="switch-off" class="label"><%=_lt.get('russian')%></label>
+        </div>
+    </div>
+</header>

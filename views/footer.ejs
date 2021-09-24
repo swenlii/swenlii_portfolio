@@ -1,0 +1,39 @@
+<footer>
+    <div class="content">
+        <div class="left-side">
+            <nav class="menu">
+                <a href="/story"><%=_lt.get('story')%></a>
+                <a href="/abilities"><%=_lt.get('abilities')%></a>
+                <a href="/works"><%=_lt.get('works')%></a>
+                <a href="#"><%=_lt.get('blog')%></a>
+                <a href="#"><%=_lt.get('for print')%></a>
+            </nav>
+            <div class="about-site">
+                <h3>Swenlii</h3>
+                <p><%=_lt.get('footer-text')%></p>
+                <div class="language-switch">
+                    <input id="switch-on2" class="lan-switch switch-left" onclick="handleClick(this);" name="lang2" value="en" type="radio" <% if (lang === 'en') {%>checked<%}%>>
+                    <label for="switch-on2" class="label"><%=_lt.get('english')%></label>
+                    <input id="switch-off2" class="lan-switch switch-right" onclick="handleClick(this);" name="lang2" value="ru" type="radio" <% if (lang === 'ru') {%>checked<%}%>>
+                    <label for="switch-off2" class="label"><%=_lt.get('russian')%></label>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <p><%=_lt.get('my-contacts')%><br><%=_lt.get('contact=email')%><br><%=_lt.get('contact-phone')%></p>
+            <div class="social">
+                <a href="#"><img src="/images/social/vk.png" alt="vk"></a>
+                <a href="#"><img src="/images/social/steam.png" alt="steam"></a>
+                <a href="#"><img src="/images/social/github.png" alt="github"></a>
+                <a href="#"><img src="/images/social/google.png" alt="google"></a>
+            </div>
+        </div>
+    </div>
+    <div class="last-block">
+        <div><a href="/terms"><%=_lt.get('terms')%></a></div>
+        <a href="http://www.freepik.com/">Image designed by Freepik</a>
+        <a href="http://www.iconfinder.com/">Social icons designed by iconfinder.com</a>
+        <a href="/works/visitka">visitka</a>
+        <div><a href="#">Copyright @2021 - Dyakova Irina</a></div>
+    </div>
+</footer>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+
+    <link rel='stylesheet' href='/css/works/visitka.css'/>
+    <link rel="icon"
+          type="image/png"
+          href="/images/test/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel = "stylesheet">
+
+</head>
+<body >
+<%- include ('content.ejs'); %>
+
+<script src="/js/jquery-3.6.0.slim.js"></script>
+<!-- для сервера, более быстрая версия
+<script src="/js/jquery-3.6.0.slim.min.js"></script>-->
+
+<!-- для разработки, отображает сообщения в консоли -->
+<script src="/js/vue.js"></script>
+<!-- для сервера, более быстрая версия
+<script src="/js/vue.min.js"></script>-->
+
+<script src="/js/vue-social-sharing.min.js"></script>
+
+<script>
+  let slide = 2;
+  let auto_slide = () => {
+    console.log(slide);
+    if (slide>=5) slide=1;
+    if (slide === 1){
+      document.querySelector('.dots input:nth-of-type(1)').checked = true;
+    }
+    if (slide === 2){
+      document.querySelector('.dots input:nth-of-type(2)').checked = true;
+    }
+    if (slide === 3){
+      document.querySelector('.dots input:nth-of-type(3)').checked = true;
+    }
+    if (slide === 4){
+      document.querySelector('.dots input:nth-of-type(4)').checked = true;
+    }
+    slide++;
+  };
+  let interval = setInterval(auto_slide, 3000);
+  function st (s) {
+    clearInterval(interval);
+    slide = s + 1;
+    setTimeout(() => {interval = setInterval(auto_slide, 3000);}, 10000);
+  }
+</script>
+
+</body>
+</html>

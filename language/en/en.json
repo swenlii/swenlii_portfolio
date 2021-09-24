@@ -1,0 +1,154 @@
+{
+	"-----------------------------------------main-": "-----------------------------------",
+
+	"title":                     "Swenlii's site (en)",
+
+	"-----------------------------------------menu-": "-----------------------------------",
+
+	"story":                     "Story",
+	"abilities":                 "Abilities",
+	"works":                     "Works",
+	"blog":                      "Blog",
+	"for print":                 "For print",
+
+	"------------------------------------languages-": "-----------------------------------",
+
+	"english":                   "English",
+	"russian":                   "Russian",
+
+	"----------------------------------acquaintance-": "----------------------------------",
+
+	"acquaintance-h":            "Hello! I love sites!",
+	"acquaintance-t-1":          "And i create it only by me. I want create site by you. The point of using.",
+	"acquaintance-t-2":          "Lorem Ipsum is that it has a ore-of-less normal distribution of letters, as opposed to using here.",
+	"acquaintance-t-3":          "<br>Oh, and one more thing. <br><a href='https://www.freepik.com/free-vector/work-from-home-isometric-landing-page_12760684.htm'>Business vector on the right created by upklyak</a>",
+
+	"-------------------------------------about-me-": "----------------------------------",
+
+	"about-me-h":                "I'm designer and developer",
+	"about-me-t-1":              "I'm love code, but i love design. And i lorem dfheuuu ehdsyewn sdhdsye dhyu dshdye  dhdusdheu dhdsyejvn vkbiejw vjvjeivj.",
+	"about-me-t-2":              "And you must contact me! Too fhgkp grool cngtto hgrroo craapp vbhgeee cnvgge gqprlcmzsaj vhfejemcmfg",
+	"about-me-b":                "See more",
+
+	"about-me-facts":            "Fun facts",
+	"about-me-fact-1":           "I hate bus",
+	"about-me-fact-2":           "I love manga and anime",
+	"about-me-fact-3":           "My cat is dead",
+	"about-me-fact-4":           "Create my world!",
+	"about-me-fact-5":           "I hate bus but i love cars!",
+	"about-me-fact-6":           "I love manga and anime",
+	"about-me-fact-7":           "Hello!",
+	"about-me-fact-8":           "Create my world!",
+
+	"---------------------------------what-can-i-do-": "----------------------------------",
+
+	"w-c-i-d-h":                 "What can I do?",
+
+	"w-c-i-d-t-1":               "to joke",
+	"w-c-i-d-t-2":               "something else",
+	"w-c-i-d-t-3":               "teach and learn",
+	"w-c-i-d-t-4":               "services",
+	"w-c-i-d-t-5":               "accuracy",
+	"w-c-i-d-t-6":               "technologies",
+	"w-c-i-d-t-7":               "adjust",
+	"w-c-i-d-t-8":               "laugh",
+
+	"w-c-i-d-tooltip-1":         "I have a sense of humor. Or I think so. Never mind.",
+	"w-c-i-d-tooltip-2":         "What sites do I make?",
+	"w-c-i-d-tooltip-3":         "I have teaching experience for both children and adults. But I can also study on my own without teachers. I absorb information pretty quickly.",
+	"w-c-i-d-tooltip-4":         "Did you come here for a site? An employee? Find out what I have to offer. Perhaps I have what you are looking for.",
+	"w-c-i-d-tooltip-5":         "I make websites painstakingly. In design, as in code, every little thing is important. Everything should be perfect! By all means!",
+	"w-c-i-d-tooltip-6":         "What technologies have I learned. This does not mean that these are all technologies that I work with. Learning is fun and fast. I will quickly learn a new technology if necessary.",
+	"w-c-i-d-tooltip-7":         "Excellent self-organization. I can organize not only my own work, but also the work of several teammates. I have experience with this.",
+	"w-c-i-d-tooltip-8":         "What else to write ... Hehehe. Maybe a laugh? Just laugh. I'll write something serious later. If I find something",
+
+	"w-c-i-d-services-html":     "And hello again. My world is very ease. And text is:<br><ul><li>design</li><li>front-end</li><li>back-end</li><li>plain</li><li>and more more another</li></ul>",
+	"more-button":               "More",
+	"w-c-i-d-tools":             "My tools:",
+
+	"w-c-i-d-tech-1":            "HTML",
+	"w-c-i-d-tech-2":            "CSS",
+	"w-c-i-d-tech-3":            "JS",
+	"w-c-i-d-tech-4":            "VUE",
+	"w-c-i-d-tech-5":            "NODE",
+	"w-c-i-d-tech-6":            "OTHER",
+
+	"---------------------------------------my-works-": "----------------------------------",
+
+	"one-work-1":                "Site #1",
+	"one-work-2":                "Site #2",
+	"one-work-3":                "Site #3",
+	"one-work-4":                "Site #4",
+	"one-work-5":                "Site #5",
+	"one-work-6":                "Site #6",
+
+	"---------------------------------------reviews-": "----------------------------------",
+
+	"reviews":                   "Reviews",
+	"review-1":                  "The man who comes back through the door in the wall will never be quite the same as the man who went out.",
+	"review-p-1":                "Aldous Huxley",
+	"review-2":                  "Carriage quitting securing be appetite it declared. High eyes kept so busy feel call in. Would day nor ask walls known.",
+	"review-p-2":                "Jesse Mckinney",
+	"review-3":                  "Rendered far opinions two yet moderate sex striking. Sufficient motionless compliment by stimulated assistance at. Convinced resolving extensive agreeable in it on as remainder.",
+	"review-p-3":                "Muriel Jimenez",
+
+	"---------------------------------------my-blog-": "----------------------------------",
+
+	"my-blog":                   "My blog",
+
+	"article-h-1":               "Position in css",
+	"article-t-1":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
+	"article-h-2":               "Position in css",
+	"article-t-2":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
+	"article-h-3":               "Position in css",
+	"article-t-3":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
+	"article-h-4":               "Position in css",
+	"article-t-4":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
+	"article-button":            "see more in blog",
+
+	"go-to-my-blog":             "Go to my Blog!",
+
+	"--------------------------------------contact-me-": "----------------------------------",
+
+	"contact-me-h":              "You want cite? Design?",
+
+	"contact-form-h":            "Contact me",
+
+	"contact-form-name":         "Name:",
+	"contact-form-name-p":       "John Doe",
+	"contact-form-email":        "Email:",
+	"contact-form-email-p":      "john-doe@gmail.com",
+	"contact-form-title":        "Title:",
+	"contact-form-title-p":      "It is title!",
+	"contact-form-object":       "Object:",
+	"contact-form-obj-1":        "Development",
+	"contact-form-obj-2":        "Design",
+	"contact-form-obj-3":        "Work",
+	"contact-form-obj-4":        "Project",
+	"contact-form-obj-5":        "Feedback",
+	"contact-form-obj-6":        "Other",
+	"contact-form-text":         "Text:",
+	"contact-form-text-p":       "Hello!",
+	"contact-form-submit":       "Submit",
+
+	"contacts-h":                "Contacts",
+	"contacts-my-address":       "My location:",
+	"contact-address":           "Russia, Komi Republic, somewhere around Syktyvkar city",
+	"contact-my-email":          "My work email:",
+	"contact=email":             "swenliw@gmail.com",
+	"contact-social-1":          "vk (Дьякова Ирина)",
+	"contact-social-2":          "steam (swenlii)",
+	"contact-social-3":          "twitter (@swenlii)",
+	"contact-social-4":          "instagram (@swenlii)",
+	"contact-social-5":          "github (swenlii)",
+	"contact-social-6":          "google",
+	"contact-social-7":          "(+7) 904 237 47 04",
+	"contact-social-8":          "(+7) 904 237 47 04",
+
+	"-----------------------------------------footer-": "----------------------------------",
+
+	"footer-text":               "It is text. And his in footer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci.",
+	"my-contacts":               "My contacts:",
+	"contact-phone":             "(+7) 904 237 47 04",
+	"terms":                     "Terms and conditions"
+}
