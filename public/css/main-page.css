@@ -248,8 +248,8 @@
 }
 
 .my-skills .skill {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border: 2px dotted var(--gray-light);
     margin: 1em;
     transition: all 0.25s ease;
@@ -297,8 +297,8 @@
 }
 
 .my-skills .skill img {
-    max-height: 40px;
-    max-width: 40px;
+    max-height: 35px;
+    max-width: 35px;
     display: block;
     margin: 0.3em auto;
 }
@@ -306,7 +306,7 @@
 .my-skills .skill h5 {
     font-family: var(--font-3);
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0;
     padding: 0;
 }
@@ -314,7 +314,7 @@
 .my-skills .skill div {
     text-align: center;
     max-width: 150px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 0.8em;
 }
 

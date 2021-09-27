@@ -1,9 +1,13 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
+const fs = require('fs');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Swenlii\'s site', lang: req.cookies.lang ? req.cookies.lang : 'en' });
+  let path = req.cookies.lang && req.cookies.lang === 'ru' ? './language/ru/works.json' : './language/en/works.json'
+  let rawdata = fs.readFileSync(path);
+  let works = JSON.parse(rawdata);
+  res.render('index', { title: 'Swenlii\'s site', lang: req.cookies.lang ? req.cookies.lang : 'en', works: works });
 });
 
 router.get('/story', function(req, res, next) {
@@ -11,7 +15,10 @@ router.get('/story', function(req, res, next) {
 });
 
 router.get('/works', function(req, res, next) {
-  res.render('works', { title: 'My works', lang: req.cookies.lang ? req.cookies.lang : 'en' });
+  let path = req.cookies.lang && req.cookies.lang === 'ru' ? './language/ru/works.json' : './language/en/works.json'
+  let rawdata = fs.readFileSync(path);
+  let works = JSON.parse(rawdata);
+  res.render('works', { title: 'My works', lang: req.cookies.lang ? req.cookies.lang : 'en', works: works });
 });
 
 router.get('/abilities', function(req, res, next) {
@@ -22,8 +29,17 @@ router.get('/terms', function(req, res, next) {
   res.render('terms', { title: 'Terms and conditions', lang: req.cookies.lang ? req.cookies.lang : 'en' });
 });
 
-router.get('/one-work', function(req, res, next) {
-  res.render('one-work', { title: 'One work tempate', lang: req.cookies.lang ? req.cookies.lang : 'en' });
+router.get('/:id', function(req, res, next) {
+  let path = req.cookies.lang && req.cookies.lang === 'ru' ? './language/ru/works.json' : './language/en/works.json'
+  let rawdata = fs.readFileSync(path);
+  let works = JSON.parse(rawdata);
+  let one_work;
+  works.forEach(el => {
+    if (el.id === req.params.id) {
+      one_work = el;
+    }
+  })
+  res.render('one-work', { title: 'One work tempate', lang: req.cookies.lang ? req.cookies.lang : 'en', work: one_work });
 });
 
 module.exports = router;

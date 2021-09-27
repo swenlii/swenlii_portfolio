@@ -1,0 +1,66 @@
+[
+  {
+    "id": "work-1",
+    "title": "САЙТ #1",
+    "mainimage": "cite.png",
+    "images": [
+      "cite.png",
+      "cite_3.png",
+      "cite_2.png"
+    ],
+    "name": "Blog of travel",
+    "technologies": "html, css, js, vue",
+    "design": "by me",
+    "sale": "negotiable price, upgrade and support possible",
+    "description": "A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...",
+    "other": "Один из лучших способов обмена информацией между приложениями, написанными на разных языках, - это использование формата JSON (JavaScript Object Notation). Благодаря единообразию и простоте JSON почти полностью заменил XML в качестве стандартного формата обмена данными в программном обеспечении, особенно в веб-сервисах."
+  },
+  {
+    "id": "work-2",
+    "title": "САЙТ #2",
+    "mainimage": "cite.png",
+    "images": [
+      "cite.png",
+      "cite_3.png",
+      "cite_2.png"
+    ],
+    "name": "Blog of travel",
+    "technologies": "html, css, js, vue",
+    "design": "by me",
+    "sale": "negotiable price, upgrade and support possible",
+    "description": "A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...",
+    "other": "Один из лучших способов обмена информацией между приложениями, написанными на разных языках, - это использование формата JSON (JavaScript Object Notation). Благодаря единообразию и простоте JSON почти полностью заменил XML в качестве стандартного формата обмена данными в программном обеспечении, особенно в веб-сервисах."
+  },
+  {
+    "id": "work-3",
+    "title": "САЙТ #3",
+    "mainimage": "cite.png",
+    "images": [
+      "cite.png",
+      "cite_3.png",
+      "cite_2.png"
+    ],
+    "name": "Blog of travel",
+    "technologies": "html, css, js, vue",
+    "design": "by me",
+    "sale": "negotiable price, upgrade and support possible",
+    "description": "A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...",
+    "other": "Один из лучших способов обмена информацией между приложениями, написанными на разных языках, - это использование формата JSON (JavaScript Object Notation). Благодаря единообразию и простоте JSON почти полностью заменил XML в качестве стандартного формата обмена данными в программном обеспечении, особенно в веб-сервисах."
+  },
+  {
+    "id": "work-4",
+    "title": "САЙТ #4",
+    "mainimage": "cite.png",
+    "images": [
+      "cite.png",
+      "cite_3.png",
+      "cite_2.png"
+    ],
+    "name": "Blog of travel",
+    "technologies": "html, css, js, vue",
+    "design": "by me",
+    "sale": "negotiable price, upgrade and support possible",
+    "description": "A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...",
+    "other": "Один из лучших способов обмена информацией между приложениями, написанными на разных языках, - это использование формата JSON (JavaScript Object Notation). Благодаря единообразию и простоте JSON почти полностью заменил XML в качестве стандартного формата обмена данными в программном обеспечении, особенно в веб-сервисах."
+  }
+]

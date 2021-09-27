@@ -12,25 +12,34 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <meta name="description" content="<%=_lt.get('acquaintance-t-1')%>"/>
+    <meta name="keywords" content="разработчик, development, portfolio, портфолио, web, web-design" />
+
+    <meta property="og:url"                content="this" />
+    <meta property="og:title"              content="<%=_lt.get('acquaintance-h')%>" />
+    <meta property="og:description"        content="<%=_lt.get('acquaintance-t-1')%>" />
+    <meta property="og:image"              content="/images/illustration.svg" />
+    <meta property="og:locale"             content="ru_RU" />
+    <meta property="og:locale:alternate"   content="en_US" />
+
 </head>
 <body>
 <%- include ('header.ejs'); %>
 
 
 <section class="one-work-page">
-    <h1>Site #1</h1>
+    <h1><%= work.title %></h1>
     <div class="page">
-        <img src="/images/cite_2.png" alt="preview" class="main-img">
-        <p><b>Name:</b> Blog of travel.</p>
-        <p><b>Technologies:</b> html, sass, node, vue</p>
-        <p><b>Design:</b> by me</p>
-        <p><b>Sale:</b> negotiable price, upgrade and support possible</p>
-        <p><b>Description:</b>A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...</p>
-        <img src="/images/cite.png" alt="preview" class="page-img">
-        <img src="/images/cite.png" alt="preview" class="page-img">
-        <img src="/images/cite_3.png" alt="preview" class="page-img">
-        <img src="/images/cite_2.png" alt="preview" class="page-img">
-        <p>Практический опыт показывает, что постоянное информационно-техническое обеспечение нашей деятельности обеспечивает широкому кругу специалистов участие в формировании системы обучения кадров, соответствующей насущным потребностям. Не следует, однако, забывать о том, что консультация с профессионалами из IT способствует подготовке и реализации дальнейших направлений развития проекта. Соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует повышению актуальности экономической целесообразности принимаемых решений.</p>
+        <img src="/images/<%= work.mainimage %>" alt="preview" class="main-img">
+        <p><b>Name:</b> <%= work.name %></p>
+        <p><b>Technologies:</b> <%= work.technologies %></p>
+        <p><b>Design:</b> <%= work.design %></p>
+        <p><b>Sale:</b> <%= work.sale %></p>
+        <p><b>Description:</b><%= work.description %></p>
+        <% for (let i = 0; i < work.images.length; i++) {%>
+        <img src="/images/<%= work.images[i] %>" alt="preview" class="page-img">
+        <%}%>
+        <p><%= work.other %></p>
         <div class="show-site"><a href="#">Show site</a></div>
     </div>
 </section>
