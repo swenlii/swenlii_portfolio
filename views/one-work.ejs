@@ -32,6 +32,7 @@
         <% } %>
         <p><b><%=_lt.get('op-work-1')%></b> <%= work.name ? work.name : '' %></p>
         <p><b><%=_lt.get('op-work-2')%></b> <%= work.technologies ? work.technologies : '' %></p>
+        <p><b><%=_lt.get('op-work-8')%></b> <a href="<%= work.git ? work.git : '' %>"><%= work.gitname ? work.gitname : '' %></a></p>
         <p><b><%=_lt.get('op-work-3')%></b> <%= work.design ? work.design : '' %></p>
         <p><b><%=_lt.get('op-work-4')%></b> <%= work.sale ? work.sale : '' %></p>
         <p><b><%=_lt.get('op-work-5')%></b><%= work.description ? work.description : ''%></p>
