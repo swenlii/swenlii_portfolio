@@ -101,6 +101,7 @@ a {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 1em 3em;
   max-width: 1600px;
@@ -112,34 +113,18 @@ header .logo {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: 0 1em;
 }
 
 header .logo .text {
   font-family: var(--font-3);
   font-weight: 600;
   font-size: 2em;
-  margin-left: 0.5em;
-  padding: 0.1em 0.6em;
+  top: 6px;
+  left: -12px;
   color: var(--white);
   mix-blend-mode: difference;
   position: relative;
-}
-
-header .logo .text .back {
-  content: "";
-  background: var(--gray-light);
-  position: absolute;
-  width: 24%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: 0.7s all  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  max-width: 110%;
-}
-
-header .logo:hover .back{
-  width: 100%;
 }
 
 header .logo .text span {
@@ -148,19 +133,21 @@ header .logo .text span {
 }
 
 header .logo img {
-  border: 2px solid var(--gray-light);
   width: 50px;
   height: 50px;
 }
 
 header .left-side{
   display: flex;
+  flex-wrap: wrap;
 }
 
 header nav {
   font-family: var(--font-1);
   display: flex;
+  flex-wrap: wrap;
   position: relative;
+  min-height: 50px;
 }
 
 nav a {
@@ -172,6 +159,7 @@ nav a {
   position: relative;
   transition: 0.2s ease color;
   color: var(--gray-light);
+  min-height: 50px;
 }
 
 nav a:before
@@ -463,7 +451,8 @@ footer .social a:hover img {
   background: var(--black);
   color: var(--gray-light);
   transform: rotate(2deg);
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 .work-story h4:nth-child(4){
@@ -473,7 +462,7 @@ footer .social a:hover img {
 
 
 .work-story p {
-  margin-top: 2em;
+  margin: 0.2em 0;
 }
 /*--------------------------------------------- Works Page ----------------------------------------------------------*/
 
@@ -492,6 +481,17 @@ footer .social a:hover img {
 }
 
 .works-page .one-work {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  min-width: 200px;
+  transition: all .35s ease;
+  padding: 1em;
+  overflow: visible;
+  background: var(--gray-light);
+  height: auto;
+  top: 0;
+  left: 0;
+  user-select: none;
+
   color: var(--black);
   width: 44%;
   margin: 3em 1em;
@@ -574,17 +574,18 @@ footer .social a:hover img {
 
 .abilities-serv li {
   counter-increment: new-style;
-  margin: 1em 0;
+  margin: 0;
   display: flex;
   align-items: center;
 }
 
 .abilities-serv li:before {
   content: counter(new-style);
-  font-size: 5em;
+  font-size: 3em;
   font-family: var(--font-2);
   margin-right: 0.3em;
-  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
 }
 
 .abilities-serv h3 {
@@ -641,7 +642,7 @@ footer .social a:hover img {
   background: var(--gray-light);
   padding: 3em;
   color: var(--black);
-  transform: rotate(-4deg);
+  transform: rotate(-2deg);
 }
 
 .abilities-tech h3 {
@@ -700,6 +701,7 @@ footer .social a:hover img {
   max-width: 1000px;
   margin: auto;
   overflow: visible;
+  position: relative;
 }
 
 .one-work-page h1 {
@@ -710,9 +712,35 @@ footer .social a:hover img {
 
 .one-work-page .page {
   background: var(--gray-light);
-  transform: rotate(-2deg);
   padding: 2em;
   color: var(--black);
+  clear: both;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  transform-style: preserve-3d;
+}
+
+.one-work-page .back-page {
+  background: var(--gray-light);
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  position: absolute;
+  top: -4px;
+  left: -3px;
+  transform: translateZ(-10px) rotate(-3deg);
+}
+
+.one-work-page .back-page::after {
+  content: "";
+  background: var(--gray-light);
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  transform: rotate(6deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 3px;
+  left: 5px;
 }
 
 .one-work-page .page:after {
@@ -722,7 +750,7 @@ footer .social a:hover img {
 }
 
 .one-work-page .main-img {
-  width: 150px;
+  width: 230px;
   display: inline;
   padding: 0.7em 0.7em 2em 0.7em;
   margin: 0.5em;
@@ -735,7 +763,7 @@ footer .social a:hover img {
 }
 
 .one-work-page .main-img:hover {
-  transform: rotate(-2deg) scale(3);
+  transform: rotate(0deg) scale(3);
   z-index: 10;
 }
 
@@ -749,7 +777,7 @@ footer .social a:hover img {
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
   transition: 0.2s transform ease;
   float: left;
-  transform: rotate(3deg);
+  transform: rotate(0deg);
 }
 
 .one-work-page .page-img:nth-child(2n + 1){
@@ -757,7 +785,7 @@ footer .social a:hover img {
 }
 
 .one-work-page .page-img:hover {
-  transform: rotate(3deg) scale(3);
+  transform:  scale(3);
   z-index: 10;
 }
 
@@ -765,15 +793,51 @@ footer .social a:hover img {
   background: var(--white);
   font-family: var(--font-2);
   padding: 1em 1.4em;
-  transform: rotate(5deg);
+  transform: rotate(5deg) translate(0px, 0px);
   color: var(--black);
   margin: 2em;
   font-size: 1.4em;
+  transition: 0.5s all ease;
 }
 
 .one-work-page .show-site {
   display: flex;
   justify-content: flex-end;
+  margin-top: 6em;
+  min-width: 50%;
+}
+
+.one-work-page .show-site a:hover {
+  text-shadow: 0 2px 0 var(--blue);
+  box-shadow: 4px 4px 0 var(--blue);
+  transform: rotate(5deg) translate(-4px, -4px);
+}
+
+/*--------------------------------------------- Terms ---------------------------------------------------------------*/
+
+.terms {
+  max-width: 1100px;
+  padding: 2em;
+  margin: auto;
+}
+
+.terms h1 {
+  font-family: var(--font-3);
+  font-size: 5em;
+  text-align: center;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+  text-decoration: underline;
+}
+
+.terms a {
+  text-decoration: underline;
+}
+
+.terms div {
+  border: 3px dotted var(--white);
+  padding: 3em;
 }
 
 /*--------------------------------------------- Mobile ---------------------------------------------------------------*/
@@ -794,8 +858,91 @@ footer .social a:hover img {
 }
 
 @media screen and (max-width:850px){
+  header,
+  header .left-side,
+  header nav {
+    justify-content: center;
+  }
+
   .arrow, .arrow2, .arrow3 {
     display: none;
+  }
+
+  .acquaintance h1 {
+    font-size: 1.9em;
+    margin-bottom: 0.2em;
+  }
+
+  .acquaintance {
+    margin: 1em auto 3.3em auto;
+  }
+
+  .i-design { 
+    font-size: 1.6em;
+  }
+
+  .fun-facts-head {
+    font-size: 1.2em;
+  }
+
+  .fun-facts-block {
+    margin-bottom: 2em;
+  }
+
+  .fun-facts-block ul {
+    margin: 0 0 0 1em;
+  }
+
+  .what-can-i-do {
+    padding: 5em 0;
+    height: 5em;
+  }
+
+  .serv-tech-info .right-side {
+    width: 100%;
+  }
+
+  .serv-tech-info .right-side * {
+    width: 100%;
+  }
+
+  .serv-tech-info .right-side a {
+    text-align: center;
+  }
+
+  .one-review {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 0 5em;
+  }
+
+  .reviews {
+    overflow: hidden;
+  }
+
+  cite {
+    font-size: 1em;
+  }
+
+  .contact-me {
+    overflow: hidden;
+  }
+
+  .contact-me h2 {
+    display: none;
+
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-me .left-side {
+    margin: 0;
+  }
+
+  .contact-me .content {
+    margin-bottom: 1em;;
   }
 }
 

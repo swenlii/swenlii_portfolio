@@ -217,7 +217,7 @@
     margin-top: 1em;
     border: 2px dotted var(--black);
     padding: 1em 0.3em;
-    width: 280px;
+    width: 350px;
     line-height: 1.6;
 }
 
@@ -303,7 +303,7 @@
     margin: 0.3em auto;
 }
 
-.my-skills .skill h5 {
+.my-skills .skill h2 {
     font-family: var(--font-3);
     text-align: center;
     font-size: 1.2em;
@@ -657,7 +657,7 @@
 
 }
 
-.one-work {
+.my-works-blocks .one-work {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     min-width: 200px;
     width: 100%;
@@ -675,18 +675,18 @@
     user-select: none;
 }
 
-.one-work:nth-child(3n+1) {
+.my-works-blocks .one-work:nth-child(3n+1) {
     transform: rotate(-3deg);
 }
 
-.one-work:nth-child(3n+2) {
+.my-works-blocks .one-work:nth-child(3n+2) {
     transform: rotate(5deg);
 }
-.one-work:nth-child(3n) {
+.my-works-blocks .one-work:nth-child(3n) {
     transform: rotate(-7deg);
 }
 
-.one-work.card-current{
+.my-works-blocks .one-work.card-current{
     position: relative;
     z-index: 6;
     transform: rotate(1deg);
@@ -1079,13 +1079,16 @@ cite {
     font-size: 0.7em;
 }
 
-.one-blog a {
-    font-size: 0.7em;
-}
-
 .one-blog .link {
+    background-color: var(--black);
+    padding: 0.7em;
+    display: block;
+    margin-top: 0.7em;
     color: var(--blue);
     transition: 0.4s all ease;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 2.3em;
 }
 
 .one-blog .card-hover.black {
@@ -1098,12 +1101,18 @@ cite {
     color: var(--black);
 }
 
+.one-blog .card-hover.black .link {
+    background: var(--white);
+    color: var(--black)
+}
+
 .one-blog .card-hover.black .link:hover {
-    background-color: var(--gray-light);
+    background-color: var(--blue);
     color: var(--black);
 }
 
 .go-blog-button {
+    display: block;
     padding: 7%;
     width: max-content;
     margin: 10% auto 0 auto;
@@ -1286,7 +1295,7 @@ cite {
 .contact-me .content {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-bottom: 10em;
     flex-wrap: wrap;
 }
@@ -1321,27 +1330,8 @@ cite {
     margin-bottom: 2em;
 }
 
-.contacts-block .social:after {
-    content: "";
-    right: 0;
-    left: 0;
-    width: 2em;
-    margin: auto;
-    bottom: 0;
-    height: 2px;
-    position: absolute;
-    border-bottom: 2px dotted var(--gray-light);
-    transition: all .3s cubic-bezier(.2, 0, 0, 1);
-    transform-origin: bottom center;
-    z-index: -1;
-}
-
-.contacts-block .social:hover:after {
-    right: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border: 2px dotted var(--gray-light);
+.contacts-block .social a:hover {
+    text-decoration: underline;
 }
 
 .contacts-block p {

@@ -3,14 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><%=_lt.get('title')%></title>
+    <title><%=_lt.get('title-tm')%></title>
 
     <link rel='stylesheet' href='/css/style.css'/>
     <link rel="icon"
-          type="image/png"
-          href="/favicon.png">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+          href="/favicon.webp">
 
     <meta name="description" content="<%=_lt.get('acquaintance-t-1')%>"/>
     <meta name="keywords" content="разработчик, development, portfolio, портфолио, web, web-design" />
@@ -27,11 +24,14 @@
 <%- include ('header.ejs'); %>
 
 <section class="terms">
-    <h1>Materials</h1>
-    <p>Материалы и инструменты, используемые при создании сайта.</p>
-    <p><b>Картинки и иконки.</b> Вектор наверху страницы (с компьютером) был найден на сайте freepik.com и разработан пользователем upklyak. В блоке "Мои работы" скрепка была создана мной через программу inkscape. Так же мной создана кнопка в блоке "Мой блог". Иконки соцсетей были найдены на сайтах https://uxwing.com/ и https://www.iconfinder.com/</p>
-    <p><b>Шрифты</b> В качестве основного шрифта используется шрифт "Brygada 1918" из google fonts. Заголовки: <a href="https://fontesk.com/baltic-fonts/">Baltic Fonts</a> и <a href="https://www.behance.net/gallery/96472071/PRACTICE-FREE-FONT">Practice</a>. А вспомогательный шрифт <a href="https://fontstorage.com/ru/font/paulo-r/stark">stark</a>. </p>
-    <p>Если у вас остались вопросы, мой адрес электронной почты: swenliw@gmail.com</p>
+    <h1><%=_lt.get('materials')%></h1>
+    <div>
+        <p><%=_lt.get('materials-1')%></p>
+        <p><%-_lt.get('materials-2')%></p>
+        <p><%-_lt.get('materials-3')%></p>
+        <p><%=_lt.get('materials-4')%></p>
+    </div>
+
 </section>
 
 <%- include ('footer.ejs'); %>

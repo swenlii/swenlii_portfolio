@@ -1,66 +1,138 @@
 [
   {
     "id": "work-1",
-    "title": "SITE #1",
-    "mainimage": "cite.png",
+    "title": "THIS SITE",
+    "mainimage": "this-1.webp",
     "images": [
-      "cite.png",
-      "cite_3.png",
-      "cite_2.png"
+      "this-2.webp",
+      "this-3.webp",
+      "this-4.webp"
     ],
-    "name": "Blog of travel",
-    "technologies": "html, css, js, vue",
-    "design": "by me",
-    "sale": "negotiable price, upgrade and support possible",
-    "description": "A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...",
-    "other": "Один из лучших способов обмена информацией между приложениями, написанными на разных языках, - это использование формата JSON (JavaScript Object Notation). Благодаря единообразию и простоте JSON почти полностью заменил XML в качестве стандартного формата обмена данными в программном обеспечении, особенно в веб-сервисах."
+    "name": "My resume",
+    "technologies": "html, css, js, node.js, express, ejs, nodemailer",
+    "design": "My first design. In fact, it's just a collection of fantasy, sticky typ-blunder. However, I like how the design turned out. Developed by me at miro.com",
+    "sale": "Petproject. Not sale.",
+    "description": "Actually, my resume, which you now see.",
+    "other": "<b>Why was the site created?</b> At the beginning it was simple: I had commercial projects, under NDA and without. But I didn't have any code that I can show. My github was empty, and showing the code of commercial sites, even without an NDA, was somehow wrong (although there was no ban on this). That is why there was a need for a personal pet-project. The first thing that came to my mind was to create my resume-portfolio, a collection of my capabilities, my business card. And later, after development, the idea arose to put your code on hosting.",
+    "href" : "/"
   },
   {
     "id": "work-2",
-    "title": "SITE #2",
-    "mainimage": "cite.png",
+    "title": "CONSPECTUS",
+    "mainimage": "conspect-1.webp",
     "images": [
-      "cite.png",
-      "cite_3.png",
-      "cite_2.png"
+      "conspect-2.webp",
+      "conspect-3.webp",
+      "conspect-4.webp"
     ],
-    "name": "Blog of travel",
-    "technologies": "html, css, js, vue",
-    "design": "by me",
-    "sale": "negotiable price, upgrade and support possible",
-    "description": "A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...",
-    "other": "Один из лучших способов обмена информацией между приложениями, написанными на разных языках, - это использование формата JSON (JavaScript Object Notation). Благодаря единообразию и простоте JSON почти полностью заменил XML в качестве стандартного формата обмена данными в программном обеспечении, особенно в веб-сервисах."
+    "name": "CONSPECTUS",
+    "technologies": "html, scss, js, vue, vue-router, nuxt.js, mysql",
+    "design": "My best design (in my opinion). An interesting fact: it was developed on the strength of 10 minutes on miro.com",
+    "sale": "Pet-project. Not sale.",
+    "description": "My blog. This SPA site is developed using nuxt.js",
+    "other": "<b>History of creation: </b> I heard a lot about developer blogs and thought, why am I worse? The material for the blog has been collected for a long time, I often \"write to the table\". I just didn't want to use wordpress for this, I wanted something more complicated. And then I came up with the idea of creating a SPA site using nuxt.js, at the same time studying this technology (before that I used only vue cli and webpack).",
+    "href" : "/works/visitka"
   },
   {
     "id": "work-3",
-    "title": "SITE #3",
-    "mainimage": "cite.png",
+    "title": "VISIT CARD",
+    "mainimage": "visitka-1.webp",
     "images": [
-      "cite.png",
-      "cite_3.png",
-      "cite_2.png"
+      "visitka-2.webp"
     ],
-    "name": "Blog of travel",
-    "technologies": "html, css, js, vue",
-    "design": "by me",
-    "sale": "negotiable price, upgrade and support possible",
-    "description": "A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...",
-    "other": "Один из лучших способов обмена информацией между приложениями, написанными на разных языках, - это использование формата JSON (JavaScript Object Notation). Благодаря единообразию и простоте JSON почти полностью заменил XML в качестве стандартного формата обмена данными в программном обеспечении, особенно в веб-сервисах."
+    "name": "Tajam",
+    "technologies": "html, css, js",
+    "design": "Free psd, find in internet.",
+    "sale": "Pet-project. For resume.",
+    "description": "The site shows my capabilities in layout. I love creating animations and interactive elements. On the example of this page I wanted to show my capabilities.",
+    "other": "",
+    "href" : "/works/visitka"
   },
   {
     "id": "work-4",
-    "title": "SITE #4",
-    "mainimage": "cite.png",
+    "title": "NO NAME #1",
+    "mainimage": "astro-1.webp",
     "images": [
-      "cite.png",
-      "cite_3.png",
-      "cite_2.png"
+      "astro-2.webp",
+      "astro-3.webp",
+      "astro-4.webp"
     ],
-    "name": "Blog of travel",
+    "name": "Astronomy for children. Working title is Astrochild",
+    "technologies": "html, css",
+    "design": "My with free pngs",
+    "sale": "Pet-project. Not sale.",
+    "description": "(pet-project) Another site showing the possibilities of layout.",
+    "other": "<b>History of creation: </b> The development of the site began with a search for images, and when there were a lot of them, it was a pity not to use them. So, in one day, such a simple site appeared, without adaptive and fluid layout, without content and not for sale. But it shows that I can create not only serious sites.",
+    "href" : "/works/astro-for-children"
+  },
+  {
+    "id": "work-5",
+    "title": "NO NAME #2",
+    "mainimage": "deliv-1.webp",
+    "images": [
+      "deliv-2.webp"
+    ],
+    "name": "Website for ordering delivery. Working title is Swenli's Delivery",
+    "technologies": "html, css, vue, node.js, express, ejs",
+    "design": "Paid design bought by me at a previous job",
+    "sale": "Initially a commercial project. But then it turned into a pet project.",
+    "description": "The site code is posted to show my coding abilities and experience in google maps.",
+    "other": "<b>History of creation: </b> The customer refused the order, having paid nothing, it was a pity to lose the developments. I decided to post the site code to show my capabilities in serious commercial development. This site has been under development for almost 2 months. It was posted on bitbacket, but it was decided to put it on git so that all projects were in one place. \n When the site was being developed, I didn't know much about vue and mostly learned it from two sites, one of which is this one. \n The main thing in this site was geolocation and smart filling in the address form, which was incredibly difficult for me, but very interesting.",
+    "href" : "github"
+  },
+  {
+    "id": "work-6",
+    "title": "NO NAME #3",
+    "mainimage": "consult-1.webp",
+    "name": "Online consultation site.  Working title is Consultation",
     "technologies": "html, css, js, vue",
-    "design": "by me",
-    "sale": "negotiable price, upgrade and support possible",
-    "description": "A simple website for the traveler. Many beautiful photographs, galleries. Convenient form for new posts. Ability to comment without registration. And much more...",
-    "other": "Один из лучших способов обмена информацией между приложениями, написанными на разных языках, - это использование формата JSON (JavaScript Object Notation). Благодаря единообразию и простоте JSON почти полностью заменил XML в качестве стандартного формата обмена данными в программном обеспечении, особенно в веб-сервисах."
+    "design": "Designed by a familiar designer, design not for sale",
+    "sale": "Pet-project. Not sale.",
+    "description": "The layout of the site was carried out according to the comparison method for perfect pixels, which shows my capabilities not only in fluid layout, but also in more accurate per-pixel layout.",
+    "other": "<b>History of creation: </b>Another refusal, but from the side of the designer. There was a rejection of the design and a familiar designer just sent me this design. When developing a portfolio, the idea arose to implement a simple website using this design.",
+    "href" : "github"
+  },
+  {
+    "id": "work-7",
+    "title": "BLACKWOOD",
+    "mainimage": "blackwood-1.webp",
+    "images": [
+      "blackwood-2.webp",
+      "blackwood-3.webp"
+    ],
+    "name": "Blackwood software",
+    "technologies": "html, css, js, vue",
+    "design": "Designed by company designer",
+    "sale": "One of the company's commercial projects, as it brought the company new customers and, of course, money.",
+    "description": "Business card website of the company I worked for. (No NDA)",
+    "other": "<b>What was created by me: </b> My website layout and translation",
+    "href" : "https://ru.blackwood.cloud/"
+  },
+  {
+    "id": "work-8",
+    "title": "SCAMMERCOIN",
+    "mainimage": "scammercoin-1.webp",
+    "images": [
+      "scammercoin-2.webp",
+      "scammercoin-3.webp"
+    ],
+    "name": "Scammercoin",
+    "technologies": "html, css, js, vue, node.js, express, ejs",
+    "design": "Paid design",
+    "sale": "The project is a joke, however, before it was really possible to create your own mail",
+    "description": "A joke site about a non-existent cryptocurrency that only grows downwards :) (No NDA)",
+    "other": "<b>What was created by me: </b> I was in charge of the project, so the entire site is designed entirely by me.",
+    "href" : "https://scammercoin.com/"
+  },
+  {
+    "id": "work-9",
+    "title": "WORKS WITH NDA",
+    "name": "SECRET (with NDA)",
+    "technologies": "html, css, js, vue, vuex, vue-router, vue-cli, node.js, express, webpack, scss",
+    "design": "Various",
+    "sale": "Commercial projects",
+    "description": "Combined several projects under the NDA, in which I took part. I will briefly talk about them.",
+    "other": "<b>Crypto wallet of currencies. </b> Using wallet without private key and usb wallet. Only to confirm operations with crypto. <b>My work:</b> full layout of the entire site, adding a wallet, registration<br><br><b>Official site of the investment strategic group. </b> Business card site to attract customers. The opportunity to buy bonds, a separate page for qualified investors and a separate website for the company's clients. <b>My work:</b> layout of the main page, development of login, autologin, registration, password reset for the company's clients.<br><br><b>P2P cryptocurrency/fiat local exchange platform. </b> Exchange, sale, purchase of cryptocurrency. Registration of an individual and on behalf of a company. Cryptocurrency operations management, viewing graphs (for companies only) of operations on TV, and a small blog. <b>My work:</b> Switching to vue, adding socket.io, as well as api programming.<br><br><b>The official website of the cryptocurrency. </b> Online wallet (buy, exchange, send, sell), support for other cryptocurrencies, exchange of crypto for certificates, currency staking, referral links. <b>My work:</b> layout of the main page, optimization of database queries (for example, adding indexes, fixing the site logic itself, caching static tables, fixing sql queries themselves), developing a referral link.<br><br><b >Cryptocurrency exchange. </b> Foreign exchange with the sale, purchase, exchange and sending of cryptocurrencies. Support for multiple cryptocurrencies, performing 100,000 operations per second. <b>My work:</b> Came in the middle of development. Layout of some pages, correction of graphic bugs.",
+    "href" : "#"
   }
 ]

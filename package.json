@@ -1,14 +1,15 @@
 {
-  "name": "my_project",
+  "name": "swenlii_portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "My first version of the Portfolio",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "apache-2.0",
   "dependencies": {
     "body-parser": "^1.19.0",
     "debug": "^2.6.9",

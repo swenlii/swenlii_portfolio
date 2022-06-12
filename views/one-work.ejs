@@ -3,14 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><%=title%></title>
+    <title><%= work ? work.title : 'Work error'%></title>
 
     <link rel='stylesheet' href='/css/style.css'/>
     <link rel="icon"
-          type="image/png"
-          href="/favicon.png">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+          href="/favicon.webp">
 
     <meta name="description" content="<%=_lt.get('acquaintance-t-1')%>"/>
     <meta name="keywords" content="разработчик, development, portfolio, портфолио, web, web-design" />
@@ -26,23 +23,29 @@
 <body>
 <%- include ('header.ejs'); %>
 
-
+<% if (work) { %>
 <section class="one-work-page">
-    <h1><%= work.title %></h1>
+    <h1><%= work.title ? work.title : '' %></h1>
     <div class="page">
-        <img src="/images/<%= work.mainimage %>" alt="preview" class="main-img">
-        <p><b>Name:</b> <%= work.name %></p>
-        <p><b>Technologies:</b> <%= work.technologies %></p>
-        <p><b>Design:</b> <%= work.design %></p>
-        <p><b>Sale:</b> <%= work.sale %></p>
-        <p><b>Description:</b><%= work.description %></p>
-        <% for (let i = 0; i < work.images.length; i++) {%>
-        <img src="/images/<%= work.images[i] %>" alt="preview" class="page-img">
-        <%}%>
-        <p><%= work.other %></p>
-        <div class="show-site"><a href="#">Show site</a></div>
+        <% if (work.mainimage) { %>
+        <a href="/images/screenshots/<%= work.mainimage %>" class="main-img"><img src="/images/screenshots/<%= work.mainimage %>" alt="preview" ></a>
+        <% } %>
+        <p><b><%=_lt.get('op-work-1')%></b> <%= work.name ? work.name : '' %></p>
+        <p><b><%=_lt.get('op-work-2')%></b> <%= work.technologies ? work.technologies : '' %></p>
+        <p><b><%=_lt.get('op-work-3')%></b> <%= work.design ? work.design : '' %></p>
+        <p><b><%=_lt.get('op-work-4')%></b> <%= work.sale ? work.sale : '' %></p>
+        <p><b><%=_lt.get('op-work-5')%></b><%= work.description ? work.description : ''%></p>
+        <% if (work.images) { for (let i = 0; i < work.images.length; i++) { %>
+        <a href="/images/screenshots/<%= work.images[i] %>" class="page-img"><img src="/images/screenshots/<%= work.images[i] %>" alt="preview" ></a>
+        <% } } %>
+        <p><%- work.other ? work.other : ''%></p>
+        <% if (work.href && work.href !== '#') { %>
+        <div class="show-site"><a href="<%= work.href %>"><%= work.href.includes("github") ? "GITHUB" : _lt.get('op-work-7')%></a></div>
+        <% } %>
+        <div class="back-page"></div>
     </div>
 </section>
+<% } %>
 
 <%- include ('footer.ejs'); %>
 </body>

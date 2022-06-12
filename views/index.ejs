@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><%=title%></title>
+    <title><%=_lt.get('title')%></title>
 
     <meta name="description" content="<%=_lt.get('acquaintance-t-1')%>"/>
     <meta name="keywords" content="разработчик, development, portfolio, портфолио, web, web-design" />
@@ -17,7 +17,7 @@
 
     <link rel='stylesheet' href='/css/style.css'/>
     <link rel="icon"
-          href="/favicon2.ico">
+          href="/favicon.webp">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -38,7 +38,7 @@
 
 <section class="about-me">
     <div class="top-separator"></div>
-    <div class="my-photo"><!-- img here --></div>
+    <div class="my-photo"><img src="/images/person.webp" alt="it is me"></div>
     <div class="content">
         <div class="left-side">
             <h2 class="i-design no-select"><%=_lt.get('about-me-h')%></h2>
@@ -61,7 +61,7 @@
 
         </div>
         <aside class="right-side">
-            <div class="fun-facts-head"><h4 ><%=_lt.get('about-me-facts')%></h4></div>
+            <div class="fun-facts-head"><h3 ><%=_lt.get('about-me-facts')%></h3></div>
             <div class="fun-facts-block">
                 <ul>
                     <li><%=_lt.get('about-me-fact-1')%></li>
@@ -82,25 +82,25 @@
 <section class="i-can-do">
     <div class="my-skills">
         <div class="skill">
-            <img src="/images/key.png" alt="">
-            <h5><%=_lt.get('my-skill-1-h')%></h5>
+            <img src="/images/key.webp" alt="">
+            <h2><%=_lt.get('my-skill-1-h')%></h2>
             <div><%=_lt.get('my-skill-1')%></div>
         </div>
         <div class="skill">
-            <img src="/images/code.png" alt="">
+            <img src="/images/code.webp" alt="">
             <div><%=_lt.get('my-skill-2')%></div>
         </div>
         <div class="skill">
-            <img src="/images/effect.png" alt="">
-            <h5><%=_lt.get('my-skill-3-h')%></h5>
+            <img src="/images/effect.webp" alt="">
+            <h2><%=_lt.get('my-skill-3-h')%></h2>
         </div>
         <div class="skill">
-            <img src="/images/love.png" alt="">
-            <h5><%=_lt.get('my-skill-4-h')%></h5>
+            <img src="/images/love.webp" alt="">
+            <h2><%=_lt.get('my-skill-4-h')%></h2>
             <div><%=_lt.get('my-skill-4')%></div>
         </div>
         <div class="skill">
-            <img src="/images/design.png" alt="">
+            <img src="/images/design.webp" alt="">
             <div><%=_lt.get('my-skill-5')%></div>
         </div>
     </div>
@@ -144,9 +144,9 @@
             <a href="/abilities" class="more-button anim-border"><%=_lt.get('more-button')%></a>
             <div class="my-tools">
                 <span><%=_lt.get('w-c-i-d-tools')%></span>
-                <div class="tool-img" data-title="Photoshop"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="photoshop"></div>
-                <div class="tool-img" data-title="Webstorm"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/WebStorm_Icon.png" alt="webstorm"></div>
-                <div class="tool-img" data-title="Sublime Text 3"><img src="/images/sublime-icon.svg" alt="sublime text 3"></div>
+                <div class="tool-img" data-title="Figma"><img src="/images/figma_icon.webp" alt="figma"></div>
+                <div class="tool-img" data-title="VS Code"><img src="/images/vs_icon.webp" alt="VS Code"></div>
+                <div class="tool-img" data-title="Github"><img src="/images/git_icon.webp" alt="Git"></div>
             </div>
         </div>
         <div class="right-side">
@@ -172,31 +172,33 @@
 <section class="my-works">
     <div class="top-separator"></div>
     <div class="my-works-text">
-        <div class="letter l-m">M</div>
-        <div class="letter l-y">y</div>
-        <div class="letter l-w no-select">w</div>
-        <div class="letter l-o">o</div>
-        <div class="letter l-r">r</div>
-        <div class="letter l-k">k</div>
-        <div class="letter l-s no-select">s</div>
+        <div class="letter l-m"><%= lang && lang === 'ru' ? 'Р' : 'M'%></div>
+        <div class="letter l-y"><%= lang && lang === 'ru' ? 'а' : 'y'%></div>
+        <% if (!(lang && lang === 'ru')) { %><div class="letter l-w no-select">w</div><% } %>
+        <div class="letter l-o"><%= lang && lang === 'ru' ? 'б' : 'o'%></div>
+        <div class="letter l-r"><%= lang && lang === 'ru' ? 'о' : 'r'%></div>
+        <div class="letter l-k"><%= lang && lang === 'ru' ? 'т' : 'k'%></div>
+        <div class="letter l-s no-select"><%= lang && lang === 'ru' ? 'ы' : 's'%></div>
     </div>
     <div class="container">
     <div class="my-works-blocks" id="works-in-this-div">
         <% for (let i = 0; i < works.length; i++) { %>
             <div class="one-work <%= i === 0 ? "card-current" : '' %>">
+                <% if (works[i].mainimage) { %>
                 <div class="photo">
-                    <img src="/images/<%= works[i].mainimage %>" alt="cite">
+                    <img src="/images/screenshots/<%= works[i].mainimage %>" alt="cite">
                     <svg width="101" height="199" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 199">
                         <path id="svg_1" d="m81.5,41.5c0,-39 -30,-31 -30.5,-31.5c0.5,0.5 -22.5,-0.5 -21.5,31.5c1,32 1,109 0.5,108.5c0.5,0.5 1.5,25.5 27.5,23.5c26,-2 16,-25 15.5,-25.5c0.5,0.5 -1.5,-60.5 -2,-61c0.5,0.5 -2.5,-17.5 -14.5,-13.5c-12,4 -10,15 -10.5,14.5c0.5,0.5 1.5,55.5 1,55" opacity="NaN" stroke-width="5" stroke="#000" fill="none"/>
                     </svg>
                 </div>
-                <h3><%= works[i].title %></h3>
-                <p><b>Name:</b> <%= works[i].name %></p>
-                <p><b>Technologies:</b> <%= works[i].technologies %></p>
-                <p><b>Design:</b> <%= works[i].design %></p>
-                <p><b>Sale:</b> <%= works[i].sale %></p>
-                <p><b>Description:</b><%= works[i].description %></p>
-                <a href="<%= works[i].id %>" class="show-site"><button class="anim-border">Show site</button></a>
+                <% } %>
+                <h3><%= works[i].title ? works[i].title : '' %></h3>
+                <p><b><%=_lt.get('op-work-1')%></b> <%= works[i].name ? works[i].name : '' %></p>
+                <p><b><%=_lt.get('op-work-2')%></b> <%= works[i].technologies ? works[i].technologies : '' %></p>
+                <p><b><%=_lt.get('op-work-3')%></b> <%= works[i].design ? works[i].design : '' %></p>
+                <p><b><%=_lt.get('op-work-4')%></b> <%= works[i].sale ? works[i].sale : '' %></p>
+                <p><b><%=_lt.get('op-work-5')%></b><%= works[i].description ? works[i].description : ''%></p>
+                <a href="<%= works[i].id ? works[i].id  : '#' %>" class="show-site"><button class="anim-border"><%=_lt.get('op-work-6')%></button></a>
             </div>
         <% } %>
     </div>
@@ -209,30 +211,29 @@
     <h2><%-_lt.get('reviews')%></h2>
     <div class="slideshow-container fade">
 
-        <!-- Full images with numbers and message Info -->
         <div class="Containers">
             <div class="one-review">
-                <blockquote><%=_lt.get('review-1')%></blockquote>
+                <blockquote><%-_lt.get('review-1')%></blockquote>
                 <cite><%-_lt.get('review-p-1')%></cite>
             </div>
         </div>
 
         <div class="Containers">
             <div class="one-review">
-                <blockquote><%=_lt.get('review-2')%></blockquote>
+                <blockquote><%-_lt.get('review-2')%></blockquote>
                 <cite><%=_lt.get('review-p-2')%></cite>
             </div>
         </div>
 
         <div class="Containers">
             <div class="one-review">
-                <blockquote><%=_lt.get('review-3')%></blockquote>
+                <blockquote><%-_lt.get('review-3')%></blockquote>
                 <cite><%=_lt.get('review-p-3')%></cite>
             </div>
         </div>
 
         <!-- Back and forward buttons -->
-        <a class="Back" onclick="plusSlides(-1)">
+        <div class="Back" onclick="plusSlides(-1)">
             <svg width="60" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 35">
                 <g>
                     <path transform="rotate(-89.1261 12.4625 17.9031)" stroke="#ffffff" id="svg_1"
@@ -240,8 +241,8 @@
                     <line stroke-dasharray="2,2" stroke-width="3" id="svg_2"
                           y2="17" x2="58.5" y1="18" x1="26.5" stroke="#ffffff" fill="none"/>
                 </g>
-            </svg></a>
-        <a class="forward" onclick="plusSlides(1)">
+            </svg></div>
+        <div class="forward" onclick="plusSlides(1)">
             <svg width="60" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 35">
                 <g>
                     <path transform="rotate(91.581 47.4624 17.9031)" stroke="#ffffff" id="svg_1"
@@ -251,7 +252,7 @@
                 </g>
 
             </svg>
-        </a>
+        </div>
     </div>
 </section>
 
@@ -318,13 +319,13 @@
             </svg>
         </div>
     </div>
-    <div class="go-blog-button">
+    <a href="#" class="go-blog-button">
         <div class="back"></div>
         <div class="back"></div>
         <div class="back"></div>
         <div class="back"></div>
         <span><%=_lt.get('go-to-my-blog')%></span>
-    </div>
+    </a>
 </section>
 
 <section class="contact-me">
@@ -407,30 +408,23 @@
                             <path fill="none" d="M325,18C228.7-8.3,118.5,8.3,78,21C22.4,38.4,4.6,54.6,5.6,77.6c1.4,32.4,52.2,54,142.6,63.7 c66.2,7.1,212.2,7.5,273.5-8.3c64.4-16.6,104.3-57.6,33.8-98.2C386.7-4.9,179.4-1.4,126.3,20.7" />
                         </svg></button>
                 </div>
-                <div class="mail-block" style="font-size: 0.6em">* Данные на сайте не сохраняются.</div>
+                <div class="mail-block" style="font-size: 0.6em"><%=_lt.get('contact-data-not-save')%></div>
             </form>
         </div>
         <div class="right-side">
             <div class="contacts-block">
                 <h3><%=_lt.get('contacts-h')%></h3>
                 <p><b><%=_lt.get('contacts-my-address')%></b> <%=_lt.get('contact-address')%></p>
-                <p><b><%=_lt.get('contact-my-email')%></b>  <%=_lt.get('contact=email')%></p>
                 <p class="social">
-                    <a href="#"><img src="/images/social/vk.png" alt="icon"><%=_lt.get('contact-social-1')%></a></p>
+                    <a href="https://github.com/swenli"><img src="/images/social/github.webp" alt="icon"><%=_lt.get('contact-social-5')%></a></p>
                 <p class="social">
-                    <a href="#"><img src="/images/social/steam.png" alt="icon"><%=_lt.get('contact-social-2')%></a></p>
+                    <a href="mailto:swenliw@gmail.ru"><img src="/images/social/google.webp" alt="icon"><%=_lt.get('contact-social-6')%></a></p>
                 <p class="social">
-                    <a href="#"><img src="/images/social/twitter.png" alt="icon"><%=_lt.get('contact-social-3')%></a></p>
+                    <a href="https://vk.com/swenlii"><img src="/images/social/vk.webp" alt="icon"><%=_lt.get('contact-social-1')%></a></p>
                 <p class="social">
-                    <a href="#"><img src="/images/social/instagram.png" alt="icon"><%=_lt.get('contact-social-4')%></a></p>
+                    <a href="https://t.me/swenlii"><img src="/images/social/telegram.webp" alt="icon"><%=_lt.get('contact-social-7')%></a></p>
                 <p class="social">
-                    <a href="#"><img src="/images/social/github.png" alt="icon"><%=_lt.get('contact-social-5')%></a></p>
-                <p class="social">
-                    <a href="#"><img src="/images/social/google.png" alt="icon"><%=_lt.get('contact-social-6')%></a></p>
-                <p class="social">
-                    <a href="#"><img src="/images/social/telegram.png" alt="icon"><%=_lt.get('contact-social-7')%></a></p>
-                <p class="social">
-                    <a href="#"><img src="/images/social/whatsapp.png" alt="icon"><%=_lt.get('contact-social-8')%></a></p>
+                    <img src="/images/social/whatsapp.webp" alt="icon"><%=_lt.get('contact-social-8')%></p>
             </div>
         </div>
     </div>
@@ -442,7 +436,7 @@
 <script src="/js/functions.js"></script>
 <script>
     // печать текста
-    let aText = ["<%=_lt.get('acquaintance-t-1')%>",
+    let aText = ["<%=_lt.get('acquaintance-t-1')%>", "&shy;",
         "<%=_lt.get('acquaintance-t-2')%>", "<%-_lt.get('acquaintance-t-3')%>"];
     let iSpeed = 50; // time delay of print out
     let iIndex = 0; // start printing array at this position
@@ -459,6 +453,12 @@
         iRow = Math.max(0, iIndex-iScrollAt);
         let destination = document.getElementById("typewriter");
 
+        if (window.innerWidth <= 850) {
+            sContents = aText[0] + '<br />' + aText[1] + '<br />' + aText[2] + '<br />' + aText[3];
+            destination.innerHTML = sContents;
+            return;
+        }
+
         while ( iRow < iIndex ) {
             sContents += aText[iRow++] + '<br />';
         }
@@ -466,7 +466,9 @@
         if ( iTextPos++ === iArrLength ) {
             iTextPos = 0;
             iIndex++;
+            
             if ( iIndex !== aText.length ) {
+                if (iIndex === 3) iSpeed = 10;
                 iArrLength = aText[iIndex].length;
                 setTimeout("typewriter()", 500);
             }
