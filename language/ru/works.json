@@ -29,7 +29,6 @@
     ],
     "name": "CONSPECTUS",
     "technologies": "html, scss, js, vue, vue-router, nuxt.js, mysql",
-    "git": "https://github.com/swenlii/swenlii_conspectus",
     "gitname": "swenlii_conspectus",
     "design": "Мой лучший дизайн (по моему мнению), при этом разрабатывался от силы 10 минут на сайте miro.com",
     "sale": "Pet-проект",

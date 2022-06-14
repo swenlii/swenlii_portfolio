@@ -510,6 +510,11 @@ footer .social a:hover img {
   justify-content: flex-end;
 }
 
+.one-work a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
 .one-work .show-site button {
   padding: 1em 2em;
   margin: 2em;
@@ -790,6 +795,11 @@ footer .social a:hover img {
 }
 
 .one-work-page a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+.one-work-page .show-site a {
   background: var(--white);
   font-family: var(--font-2);
   padding: 1em 1.4em;

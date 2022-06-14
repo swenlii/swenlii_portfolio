@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 let nodemailer = require('nodemailer');
+const constants = require('./CONSTANTS');
 
 const app = express();
 
@@ -36,19 +37,19 @@ app.post("/send", async function (request, response) {
   await request.on('data', async function (data) {
     body += data;
     let t = JSON.parse(body);
-    let transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
+    let transporter = createTransport({
+      host: constants.mail_host,
+      port: constants.mail_port,
       secure: true,
       auth: {
-        user: 'swenliw@gmail.com',
-        pass: 'ldwjgybfawvccirg'
+        user: constants.mail_user,
+        pass: constants.mail_pass
       }
     });
     await transporter.sendMail({
-      from: 'swenliw@gmail.com',
+      from: constants.mail_user,
       sender: decodeURIComponent(t.email),
-      to: 'swenliw@gmail.com',
+      to: constants.mail_user,
       subject: decodeURIComponent(t.title),
       html: "<p>Письмо направилено с формы контакта в портфолио</p><h1 style='color: #f80b0b'>" + decodeURIComponent(t.title) + "</h1><p><h3 style='color: #3f6efd'>Name sender:</h3>" + decodeURIComponent(t.name) + "</p><p><h3 style='color: #0b99f8'>Object:</h3>" + decodeURIComponent(t.object) + "</p><p><h3 style='color: #743ffd'>Email for answer:</h3>" + decodeURIComponent(t.email) + "</p><p><h3 style='color: #0bf889'>Text:</h3><pre>" + decodeURIComponent(t.mail) + "</pre></p>",
     }, (error, infoSuccess) => {
@@ -63,9 +64,7 @@ app.post("/send", async function (request, response) {
   });
 });
 
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+
 
 
 module.exports = app;

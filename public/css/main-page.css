@@ -693,6 +693,11 @@
     user-select: auto;
 }
 
+.my-works-blocks .one-work a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
 .one-work.card-current:hover {
     transform: scale(1.2);
 }
