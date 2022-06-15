@@ -52,22 +52,27 @@ function time_tooltip () {
 
 //карточки работы
 let cards = document.getElementsByClassName('one-work');
+let nextButton = document.getElementsByClassName('next-button');
 let currCard = 0;
-for(let i = 0; i < cards.length; i++){
-    cards[i].addEventListener('click', () => {
-        console.log(currCard);
-        cards[currCard].classList.remove("card-current");
-        cards[currCard].classList.add('card-anim');
-        currCard++;
-        if (currCard >= cards.length) currCard = 0;
-        cards[currCard].classList.add("card-current");
+nextClick = () => {
+    console.log(currCard);
+    cards[currCard].classList.remove("card-current");
+    cards[currCard].classList.add('card-anim');
+    currCard++;
+    if (currCard >= cards.length) currCard = 0;
+    cards[currCard].classList.add("card-current");
 
+    window.requestAnimationFrame(function(time) {
         window.requestAnimationFrame(function(time) {
-            window.requestAnimationFrame(function(time) {
-                cards[currCard].classList.remove('card-anim');
-            });
+            cards[currCard].classList.remove('card-anim');
         });
     });
+};
+
+for(let i = 0; i < cards.length; i++){
+    cards[i].addEventListener('click', nextClick);
+    nextButton[0].addEventListener('click', nextClick);
+    
 
     function handleClick(myRadio) {
         document.cookie = 'lang = ' + myRadio.value;

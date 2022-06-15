@@ -48,13 +48,6 @@
             </div>
             <div class="sea-story">
                 <a href="/story">
-                    <svg width="267" height="91" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <path id="svg_6" d="m375.5,252.5" opacity="NaN" stroke-dasharray="2,2" stroke="#000" fill="none"/>
-                            <path id="svg_4" d="m0.975,50.485l242.5,-47.5l22.5,63.5l-209.5,23.5l-55.5,-39.5z" opacity="undefined" stroke-dasharray="2,2" stroke="#000" fill="none"/>
-                        </g>
-
-                    </svg>
                     <%=_lt.get('about-me-b')%>
                 </a>
             </div>
@@ -180,6 +173,7 @@
         <div class="letter l-k"><%= lang && lang === 'ru' ? 'т' : 'k'%></div>
         <div class="letter l-s no-select"><%= lang && lang === 'ru' ? 'ы' : 's'%></div>
     </div>
+    <div class="next-button-block"><button class="next-button"><%=_lt.get('next-button')%></button></div>  
     <div class="container">
     <div class="my-works-blocks" id="works-in-this-div">
         <% for (let i = 0; i < works.length; i++) { %>

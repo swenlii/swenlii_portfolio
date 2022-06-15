@@ -158,43 +158,20 @@
     color: var(--black);
     font-family: var(--font-2);
     text-transform: uppercase;
-    padding: 3rem 6rem 1.5rem 6rem;
+    padding: 1rem 2rem 1rem 2rem;
     margin-top: 2rem;
     display: inline-block;
     position: relative;
     transition: all 0.2s linear;
     font-size: 1.2em;
-}
-
-.sea-story svg {
-    height: 100%;
-    /* width: 100%; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.sea-story svg #svg_4 {
-    fill: transparent;
-    stroke: black;
-    stroke-dasharray: 2, 2.6;
-    stroke-width: 2.5;
-    stroke-linecap: butt;
-    transition: all 0.2s linear;
-}
-
-.sea-story a:hover #svg_4{
-    stroke: var(--black);
-    stroke-dashoffset: 30;
-    text-shadow: 4px 4px 0 var(--blue);
-    d: path('m1.975,21.372l262.5,-0.38701l0.5,68.5l-263.5,-0.38701l0.5,-67.72599z');
+    border: 2px dotted var(--black);
+    font-weight: 600;
 }
 
 .sea-story a:hover {
     text-shadow: 5px 8px 0 var(--blue), -5px -8px 0 var(--blue);
     font-weight: 600;
+    border: 2px dotted var(--blue);
 }
 
 .about-me .right-side {
@@ -652,7 +629,7 @@
 .my-works-blocks {
     display: inline-block;
     max-width: 38em;
-    margin: 10em auto 0 auto;
+    margin: 3em auto 0 auto;
     position: relative;
 
 }
@@ -660,7 +637,6 @@
 .my-works-blocks .one-work {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     min-width: 200px;
-    width: 100%;
     margin: 2em;
     position: absolute;
     transition: all .35s ease;
@@ -744,6 +720,7 @@
     right: -1em;
     transform: rotate(6deg);
     float: right;
+    max-width: 300px;
 }
 
 .one-work img {
@@ -788,6 +765,14 @@
     padding: 0 1em;
 }
 
+.my-works .next-button-block {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 4em auto 0 auto;
+    padding: 0 1em;
+}
+
 .my-works .more-button {
     background: var(--gray-light);
     transform: rotate(10deg);
@@ -796,8 +781,29 @@
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
 }
 
+.my-works .next-button {
+    background: var(--gray-light);
+    color: var(--black);
+    transition: 0.2s all ease;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    border: 0 dotted var(--white);
+    padding: 1em 3em;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 1em;
+    font-family: var(--font-2);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
 .my-works .more-button:hover {
     transform: scale(1.1) rotate(6deg);
+    box-shadow: 9px 9px 13px rgba(0, 0, 0, 0.2);
+}
+
+.my-works .next-button:hover {
+    transform: scale(1.1);
     box-shadow: 9px 9px 13px rgba(0, 0, 0, 0.2);
 }
 
@@ -1412,6 +1418,7 @@ cite {
     font-size: 1em;
     flex: 1;
     min-width: 109px;
+    width: max-content;
 }
 
 .contact-form .mail-block .radio-parent {

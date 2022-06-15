@@ -159,7 +159,6 @@ nav a {
   position: relative;
   transition: 0.2s ease color;
   color: var(--gray-light);
-  min-height: 50px;
 }
 
 nav a:before
@@ -273,15 +272,19 @@ footer .content{
 }
 
 footer .left-side {
-  align-items: flex-end;
+  align-items: self-end;
   display: flex;
+  flex-wrap: wrap-reverse;
   margin: 2em auto 2em 0;
+}
+
+footer .left-side p {
+  max-width: 300px;
 }
 
 footer .menu {
   border: 2px dotted var(--gray-light);
   padding: 1em;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,9 +305,10 @@ footer .right-side {
 }
 
 footer .about-site {
-  max-width: 250px;
+  max-width: 300px;
   margin-left: 1em;
   font-family: var(--font-1);
+  margin-bottom: 1em;
 }
 
 footer .language-switch {
@@ -482,7 +486,7 @@ footer .social a:hover img {
 
 .works-page .one-work {
   box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
-  min-width: 200px;
+  min-width: 500px;
   transition: all .35s ease;
   padding: 1em;
   overflow: visible;
@@ -494,15 +498,16 @@ footer .social a:hover img {
 
   color: var(--black);
   width: 44%;
-  margin: 3em 1em;
+  margin: 1em 1em;
   position: relative;
   cursor: initial;
+  flex: 1;
 }
 
 .works-page h1 {
   font-family: var(--font-4);
-  font-size: 8em;
-  margin: 1em;
+  font-size: 5em;
+  margin: 0.5em 0.8em;
 }
 
 .one-work .show-site {
@@ -552,24 +557,24 @@ footer .social a:hover img {
   max-width: 1500px;
   padding: 3em 0;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .abilities-page .left-side {
   flex: 1;
-  min-width: 420px;
   padding: 1em;
   margin: 2em 3em;
 }
 
 .abilities-page .right-side {
   flex: 1;
-  min-width: 420px;
+  min-width: 520px;
   padding: 1em;
   margin: 2em 3em;
 }
 
 .abilities-serv {
-
+  min-width: 400px;
 }
 
 .abilities-serv ol {
@@ -609,6 +614,7 @@ footer .social a:hover img {
   color: var(--black);
   margin-top: 5em;
   transform: rotate(2deg);
+  min-width: 450px;
 }
 
 .abilities-serf h3 {
@@ -622,7 +628,8 @@ footer .social a:hover img {
 }
 
 .serf-block {
-  width: 150px;
+  min-width: 150px;
+  max-width: 250px;
   display: inline;
   padding: 0.7em 0.7em 2em 0.7em;
   margin: 0.5em;
@@ -630,6 +637,7 @@ footer .social a:hover img {
   position: relative;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
   transition: 0.2s transform ease;
+  flex: 1
 }
 
 .serf-block:hover {
@@ -852,18 +860,130 @@ footer .social a:hover img {
 
 /*--------------------------------------------- Mobile ---------------------------------------------------------------*/
 
-@media screen and (max-width:750px){
+/* only mobile */
+@media (hover: none) and (pointer:ough) { 
+  .one-work-page .main-img:hover, 
+  .one-work-page .page-img:hover,
+  .one-work .photo:hover {
+    transform: scale(1);
+  }
   .contact-form {
     transform: rotate(0deg);
   }
+}
+/* only tablets */
+@media (hover: none) and (pointer: fine) { 
+  .one-work-page .main-img:hover, 
+  .one-work-page .page-img:hover,
+  .one-work .photo:hover {
+    transform: scale(1);
+  }
+  .contact-form {
+    transform: rotate(0deg);
+  }
+}
 
-  .one-review blockquote {
-    font-size: 1em;
-    max-width: 400px;
+@media screen and (max-width:1100px){
+  .acquaintance h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  .acquaintance .main-img {
+    height: 400px;
+  }
+  .fun-facts-head {
+    margin-top: 0;
+  }
+  .fun-facts-block {
+    width: 450px;
+  }
+  .fun-facts-block ul {
+    margin-left: 0.5em;
+    padding-left: 1.5em;
+  }
+  .what-can-i-do span:nth-child(7), 
+  .what-can-i-do span:nth-child(8) {
+    display: none;
+  }
+  .my-skills .skill:nth-child(5) {
+    display: none;
+  }
+  .my-works .container {
+    padding: 0 1em;
+  }
+  .my-works-blocks {
+    margin-top: 2em;
+  }
+  .one-blog:nth-child(4) {
+    display: none;
+  }
+  .contact-form {
+    transform: rotate(-6deg)
+  }
+  .cube {
+    display: none;
   }
 
-  .acquaintance .right-side {
-    display: none;
+  footer .left-side {
+    align-items: center;
+  }
+
+  footer .menu {
+    min-width: 250px;
+  }
+
+  footer .menu a {
+    min-height: 50px;
+    text-align: center;
+  }
+  .my-story {
+    padding: 3em;
+  }
+  .my-story h1 {
+    font-size: 3em;
+  }
+  .my-story p {
+    font-size: 1.2em;
+    width: 80%;
+    min-width: 400px;
+  }
+  .child-story, 
+  .university-story, 
+  .work-story {
+    transform: rotate(0deg);
+    padding: 3em;
+  }
+  .work-story h4 {
+    font-size: 1.7em;
+  }
+  .abilities-page .content {
+    padding: 0;
+  }
+  .abilities-page .left-side,
+  .abilities-page .right-side {
+    margin: 1em;
+  }
+  .abilities-tech,
+  .abilities-serf {
+    transform: rotate(0deg);
+  }
+  .abilities-serv h3 {
+    margin: 0.3em 0;
+  }
+  .works-page h1 {
+    font-size: 3em;
+    margin: 0.5em 0.8em;
+  }
+  .works {
+    padding: 1em;
+  }
+  .one-work-page h1 {
+    font-size: 3em;
+    margin: 0.3em;
+    margin-bottom: 1em;
+  }
+  .works-page .one-work {
+    margin: 1em;
   }
 }
 
@@ -945,6 +1065,8 @@ footer .social a:hover img {
 
   .contact-form {
     padding: 20px;
+    margin-top: 2em;
+    transform: rotate(-3deg);
   }
 
   .contact-me .left-side {
@@ -954,10 +1076,421 @@ footer .social a:hover img {
   .contact-me .content {
     margin-bottom: 1em;;
   }
+  .one-work-page .main-img:hover, 
+  .one-work-page .page-img:hover{
+    transform: scale(2);
+  }
+  .one-work .photo:hover {
+    transform: scale(1);
+  }
+  .one-work-page .back-page {
+    display: none;
+  }
+  .one-work-page {
+    padding: 1.3em;
+  }
+  .one-work-page .page {
+    background: var(--black);
+    padding: 1em;
+    color: var(--white);
+    box-shadow: none;
+  }
+
+  .abilities-tech,
+  .abilities-serf {
+    padding: 2em;
+  }
+
+  .abilities-serf, 
+  .abilities-me {
+    margin-top: 2em;
+  }
+
+  .what-can-i-do h2 {
+    font-size: 1.7em
+  }
+
+  .my-skills .skill:nth-child(4) {
+    display: none;
+  }
+
+  .what-can-i-do span:nth-child(6) {
+    display: none;
+  }
+
+  .serv-tech-info .left-side {
+    flex: 1
+  }
+
+  .my-tools {
+    background-image: linear-gradient(90deg, var(--white) 50%, transparent 50%), linear-gradient(90deg, var(--white) 50%, transparent 50%), linear-gradient(0deg, var(--white) 50%, transparent 50%), linear-gradient(0deg, var(--white) 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 4px 2px, 4px 2px, 2px 4px, 2px 4px;
+    background-position: left top, right bottom, left bottom, right   top;
+    animation: border-dance 3s infinite linear;
+    padding: 1em;
+  }
+
+  .more-button {
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width:750px){
+  .contact-form {
+    transform: rotate(0deg);
+  }
+
+  .one-review blockquote {
+    font-size: 1em;
+    max-width: 400px;
+  }
+
+  .acquaintance .right-side {
+    display: none;
+  }
+
+  .one-work-page .main-img:hover, 
+  .one-work-page .page-img:hover {
+    transform: scale(1);
+  }
+
+  .my-works-blocks .one-work {
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
+    margin: 0.2em;
+  }
+
+  .my-works-blocks .one-work:nth-child(3n+1) {
+    transform: rotate(-1deg);
+}
+
+.my-works-blocks .one-work:nth-child(3n+2) {
+    transform: rotate(3deg);
+}
+.my-works-blocks .one-work:nth-child(3n) {
+    transform: rotate(-4deg);
+}
+.contact-me .left-side {
+  width: 100%;
+}
+.contact-form {
+  margin-top: 0;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.contact-form textarea {
+  color: #19e1b4;
+  filter: invert(98.5%)
+}
+
+.contact-form button {
+  color: var(--white);
+}
+
+.contact-form label,
+.contact-form .mail-block .header {
+  min-width: 75px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form .mail-block .radio-parent {
+  flex: 4
+}
+}
+
+@media screen and (max-width:660px){ 
+  .my-works-blocks .one-work {
+    transform: rotate(0deg) !important;
+    box-shadow: none;
+    margin: 0.2em;
+  }
+
+  .what-can-i-do .tooltip,
+  .my-skills .skill {
+    display: none;
+
+  }
+
+  .work-story h4 {
+    background: var(--gray-light);
+    color: var(--black);
+    transform: rotate(0deg);
+    display: block;
+  }
+
+  .child-story, .university-story, .work-story, .my-story {
+    transform: rotate(0deg);
+    padding: 1.5em;
+  }
+
+  .go-blog-button .back {
+    display: none;
+  }
+
+  .go-blog-button {
+    background: var(--black);
+    padding: 1.5em;
+    margin: 1em;
+    width: auto;
+  }
+}
+
+@media screen and (max-width:895px){ 
+  footer .left-side {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .about-site {
+    text-align: right;
+  }
+
+  footer .left-side p {
+    text-align: end;
+  }
+
+  footer .language-switch {
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width:607px){ 
+  footer .left-side {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-site {
+    text-align: center;
+  }
+
+  footer .left-side p {
+    text-align: center;
+  }
+
+  footer .language-switch {
+    justify-content: center;
+  }
+
+  footer .right-side {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:705px){ 
+
+  .one-blog {
+    flex: 1;
+  }
+
+  .one-blog:nth-child(4) {
+    display: block;
+  }
+
+  .acquaintance {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width:560px){
   .what-can-i-do .tooltip {
     display: none;
   }
+  .fun-facts-block {
+    margin-bottom: 4em;
+    width: auto;
+    min-width: 200px;
+  }
+
+  .about-me .right-side {
+    margin:  0.3em 1em;
+  }
+
+  .serf-block {
+    width: auto;
+    padding: 0;
+  }
+
+  .serf-block:hover {
+    transform: scale(1)
+  }
+}
+
+@media screen and (max-width:500px){
+  .one-work .photo {
+    float: none;
+    transform: rotate(0deg);
+    max-width: 400px;
+    width: 90%;
+    top: -1em;
+    right: 0;
+  }
+
+  blockquote::after,
+  blockquote:before {
+    display: none;
+  }
+
+  .one-review {
+    margin: 0;
+    padding: 0 3em;
+  }
+
+  .Back, .forward {
+    padding: 9px
+  }
+}
+
+@media screen and (max-width:445px){
+  .go-blog-button {
+    font-size: 0.7em;
+    text-align: center;
+  }
+
+  .contact-form .mail-block {
+    display: block
+  }
+  .contact-form .mail-block > * {
+    display: block;
+  }
+  .contact-form label, .contact-form .mail-block .header {
+    text-align: left;
+    display: block;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .contact-form {
+    min-width: 100px;
+  }
+
+  .contact-form h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .contact-form .mail-block {
+    text-align: left;
+  }
+
+  .my-story h1,
+  .abilities-serv h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .my-story p {
+    min-width: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .my-story h3,
+  .university-story h3,
+  .work-story h3 {
+    font-size: 1.5em;
+  }
+
+  .work-story h4 {
+    font-size: 1.3em;
+  }
+
+  .abilities-serv li:before {
+    font-size: 1.5em;
+    min-width: 30px
+  }
+
+  .abilities-serv ol {
+    padding-left: 1em
+  }
+
+  .abilities-serv {
+    min-width: 230px
+  }
+
+  .abilities-serf, .abilities-me,
+  .abilities-page .left-side, .abilities-page .right-side {
+    min-width: 230px;
+  }
+
+  .abilities-page .left-side, .abilities-page .right-side {
+    padding: 0;
+    margin: 0;
+  }
+
+  .abilities-me {
+    padding: 1em;
+    margin: 0;
+  }
+
+  .abilities-me h3 {
+    margin: 0.5em 0;
+  }
+
+  .abilities-tech, .abilities-serf {
+    padding: 1em;
+  }
+
+  .works-page h1 {
+    font-size: 2em;
+  }
+
+  .works-page .one-work {
+    margin: 0;
+    margin-bottom: 1em;
+    min-width: 230px;
+  }
+
+  .works {
+    padding: 0;
+  }
+
+  .one-work .show-site button {
+    margin: 1em
+  }
+
+  .one-work .show-site {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width:400px){
+  .work-story h3,
+  .university-story h3 {
+    font-size: 2em;
+  }
+
+  .one-work .photo {
+    float: none;
+    transform: rotate(0deg);
+    max-width: 400px;
+    width: 100%;
+  }
+
+
+  .who-am-i {
+    padding: 1em
+  }
+  
+  .i-design {
+    white-space: normal;
+    padding: 0 0.5em
+  }
+
+  .i-design:before {
+    display: none;
+  }
+
 }

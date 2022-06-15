@@ -76,7 +76,8 @@
   "w-c-i-d-tooltip-8":         "Interacting with others, I try to avoid disagreements, I do not like competition, I prefer to cooperate with people rather than compete.",
 
   "w-c-i-d-services-html":     "My main skills: <br><ul><li>2 years experience in vue.js development.</li><li>JavaScript: write ES6(know the difference from es2020)</li><li>Experience in code review</li><li>I know node/express/ejs</li><li>...</li></ul>",
-  "more-button":               "Next",
+  "next-button":               "Next",
+  "more-button":               "See All",
   "w-c-i-d-tools":             "My tools:",
 
   "w-c-i-d-tech-1":            "VUE",
