@@ -471,7 +471,7 @@
 
 .technologies {
     padding: 3em 2em;
-    min-width: 300px;
+    min-width: 400px;
     width: 30vw;
 }
 
@@ -631,7 +631,6 @@
     max-width: 38em;
     margin: 3em auto 0 auto;
     position: relative;
-
 }
 
 .my-works-blocks .one-work {

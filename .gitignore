@@ -76,3 +76,5 @@ typings/
 .fusebox/
 
 CONSTANTS.js
+
+package-lock.json

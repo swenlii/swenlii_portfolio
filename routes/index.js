@@ -25,8 +25,8 @@ router.get('/abilities', function(req, res, next) {
   res.render('abilities', { title: 'My abilities', lang: req.cookies.lang ? req.cookies.lang : 'en' });
 });
 
-router.get('/terms', function(req, res, next) {
-  res.render('terms', { title: 'Terms and conditions', lang: req.cookies.lang ? req.cookies.lang : 'en' });
+router.get('/materials', function(req, res, next) {
+  res.render('terms', { title: 'Materials', lang: req.cookies.lang ? req.cookies.lang : 'en' });
 });
 
 router.get('/:id', function(req, res, next) {

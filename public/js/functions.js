@@ -72,12 +72,11 @@ nextClick = () => {
 for(let i = 0; i < cards.length; i++){
     cards[i].addEventListener('click', nextClick);
     nextButton[0].addEventListener('click', nextClick);
-    
+}
 
-    function handleClick(myRadio) {
-        document.cookie = 'lang = ' + myRadio.value;
-        window.location.reload();
-    }
+function handleClick(myRadio) {
+    document.cookie = 'lang = ' + myRadio.value;
+    window.location.reload();
 }
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {

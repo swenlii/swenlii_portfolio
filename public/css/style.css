@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 @import url('/css/main-page.css');
 
 @font-face {
@@ -32,7 +33,7 @@
   --font-1: 'Play', serif; /* Основной */
   --font-2: 'BalticBelt', serif; /* Заголовки 1 */
   --font-3: 'stark', serif; /* Вспомогательный */
-  --font-4: 'Practice', sans-serif; /* Заголовки 2 */
+  --font-4: 'Roboto Slab', serif; /*'Practice', sans-serif;*/ /* Заголовки 2 */
   --font-5: 'Caveat', cursive; /* В контактах */
 }
 
@@ -861,7 +862,7 @@ footer .social a:hover img {
 /*--------------------------------------------- Mobile ---------------------------------------------------------------*/
 
 /* only mobile */
-@media (hover: none) and (pointer:ough) { 
+@media (hover: none) { 
   .one-work-page .main-img:hover, 
   .one-work-page .page-img:hover,
   .one-work .photo:hover {
@@ -870,13 +871,18 @@ footer .social a:hover img {
   .contact-form {
     transform: rotate(0deg);
   }
+
+  .contacts-block h3,
+  .work-story h4 {
+    padding: 0.2em 0;
+  }
 }
 /* only tablets */
-@media (hover: none) and (pointer: fine) { 
+@media (hover: hover) and (pointer: coarse) { 
   .one-work-page .main-img:hover, 
   .one-work-page .page-img:hover,
   .one-work .photo:hover {
-    transform: scale(1);
+    transform: scale(1.3);
   }
   .contact-form {
     transform: rotate(0deg);
@@ -919,22 +925,6 @@ footer .social a:hover img {
   }
   .contact-form {
     transform: rotate(-6deg)
-  }
-  .cube {
-    display: none;
-  }
-
-  footer .left-side {
-    align-items: center;
-  }
-
-  footer .menu {
-    min-width: 250px;
-  }
-
-  footer .menu a {
-    min-height: 50px;
-    text-align: center;
   }
   .my-story {
     padding: 3em;
@@ -1028,8 +1018,14 @@ footer .social a:hover img {
     height: 5em;
   }
 
+  .serv-tech-info .left-side {
+    width: 90%;
+    flex: 1;
+  }
+
   .serv-tech-info .right-side {
-    width: 100%;
+    width: 90%;
+    flex: 1;
   }
 
   .serv-tech-info .right-side * {
@@ -1138,6 +1134,12 @@ footer .social a:hover img {
 }
 
 @media screen and (max-width:750px){
+
+  
+  .cube {
+    display: none;
+  }
+
   .contact-form {
     transform: rotate(0deg);
   }
@@ -1149,6 +1151,15 @@ footer .social a:hover img {
 
   .acquaintance .right-side {
     display: none;
+  }
+
+  .acquaintance div {
+    text-align: center;
+  }
+
+  .acquaintance p {
+    text-align: center;
+    margin: auto
   }
 
   .one-work-page .main-img:hover, 
@@ -1235,6 +1246,10 @@ footer .social a:hover img {
     padding: 1.5em;
     margin: 1em;
     width: auto;
+  }
+
+  .my-works-blocks {
+    overflow: hidden;
   }
 }
 
@@ -1323,9 +1338,31 @@ footer .social a:hover img {
   .serf-block:hover {
     transform: scale(1)
   }
+
+  .my-works-text .letter {
+    font-size: 2.7em;
+  }
 }
 
 @media screen and (max-width:500px){
+
+  .technologies {
+    min-width: 150px;
+}
+
+  footer .left-side {
+    align-items: center;
+  }
+
+  footer .menu {
+    min-width: 250px;
+  }
+
+  footer .menu a {
+    min-height: 50px;
+    text-align: center;
+  }
+
   .one-work .photo {
     float: none;
     transform: rotate(0deg);
@@ -1348,6 +1385,15 @@ footer .social a:hover img {
   .Back, .forward {
     padding: 9px
   }
+
+  .my-works-text .l-w {
+    margin-left: 0em;
+  }
+
+  .my-works-text .letter {
+    font-size: 2.4em;
+  }
+
 }
 
 @media screen and (max-width:445px){
@@ -1463,6 +1509,10 @@ footer .social a:hover img {
 
   .one-work .show-site {
     justify-content: flex-start;
+  }
+
+  .my-works-text .letter {
+    font-size: 2em;
   }
 }
 

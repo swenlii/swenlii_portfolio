@@ -23,8 +23,8 @@
 
   "----------------------------------acquaintance-": "----------------------------------",
 
-  "acquaintance-h":            "I'm front-end developer!",
-  "acquaintance-t-1":          "I have 3 years of experience in web development. I have extensive experience in working with foreign companies. ",
+  "acquaintance-h":            "Hello! You have landed on my site!",
+  "acquaintance-t-1":          "I'm Swenlii and I have 3 years of experience in web development. I have extensive experience in working with foreign companies. ",
   "acquaintance-t-2":          "During my career I have participated in the development of more than 10 commercial projects. I can do a small project on my own. ",
   "acquaintance-t-3":          "<a href='https://github.com/swenli'>My git repository</a>",
 
@@ -165,8 +165,7 @@
 
   "footer-text":               "Personal site of Dyakova Irina. That is me. It's just another portfolio site. Made in a couple of months.",
   "my-contacts":               "My contacts:",
-  "contact-phone":             "(+7) 904 237 47 04",
-  "terms":                     "Materials and rights",
+  "terms":                     "Materials",
 
   "---------------------------------------abilities-": "----------------------------------",
 
@@ -283,6 +282,6 @@
   "materials" : "Materials",
   "materials-1" : "Materials and tools used to create the site.",
   "materials-2" : "<b>Pictures and icons.</b>The vector at the top of the page (with a computer) was found on freepik.com and designed by upklyak. In the \"My works\" block, the paperclip was created by me using the inkscape program. I also created a button in the \"My Blog\" block. Social media icons were found on https://uxwing.com/ and https://www.iconfinder.com/",
-  "materials-3" : "<b>Fonts</b> As the main font, the \"Brygada 1918\" font from the Google Fonts site is used. Titles: <a href=\"https://fontesk.com/baltic-fonts/\">Baltic Fonts</a> and <a href=\"https://www.behance.net/gallery/96472071/PRACTICE-FREE-FONT\">Practice</a>. Auxiliary font <a href=\"https://fontstorage.com/ru/font/paulo-r/stark\">stark</a>. ",
+  "materials-3" : "<b>Fonts</b> As the main font, the \"Play\" font from the Google Fonts site is used. Titles: <a href=\"https://fontesk.com/baltic-fonts/\">Baltic Fonts</a> and <a href=\"https://fonts.google.com/specimen/Roboto+Slab\">Roboto Slab</a>. Auxiliary font <a href=\"https://fontstorage.com/ru/font/paulo-r/stark\">stark</a>. ",
   "materials-4" : "If you have any questions, my email address is: swenliw@gmail.com"
 }
