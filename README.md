@@ -4,7 +4,7 @@
 ![node-version](https://img.shields.io/badge/license-Apache-blue)
 ![npm-version](https://img.shields.io/badge/npm-8.12.1-red) 
 ![node-version](https://img.shields.io/badge/node->=16.15.1-green)
-[![node-version](https://img.shields.io/badge/watch-live-blueviolet)](https://github.com/swenli) <!-- ccылка на проект -->
+[![node-version](https://img.shields.io/badge/watch-live-blueviolet)](https://swenlii.up.railway.app/)
 
 <div align="center">
 <img src="public/images/screenshots/this-1.webp" width="500px">
@@ -24,7 +24,7 @@
 2. В третьих, репрозиторий создан для истории. По коду в проекте можно понять, какой стиль кода был у меня в 2022 году.
 
 ### 👀 Где можно увидеть проект?
-Увидеть проект вживую можно на сайте: <!-- ccылка на проект -->
+Увидеть проект вживую можно на сайте: https://swenlii.up.railway.app/
 
 ## Технологии 
 - Дизайн разрабатывался в Miro. Сайт проверялся через Lighthouse. 
@@ -40,11 +40,11 @@
 ## Установка
 
 1. `npm install`
-2. `node app.js`
+2. `npm run start`
 
 ## Источники
 
 - Вектор наверху страницы (с компьютером) был найден на сайте [freepik](https://ru.freepik.com) и разработан пользователем [upklyak](https://ru.freepik.com/author/upklyak). 
 - В блоке "Мои работы" скрепка была создана мной через программу inkscape. 
 - Так же мной создана кнопка в блоке "Мой блог". Иконки соцсетей были найдены на сайтах [uxwing](https://uxwing.com/) и [iconfinder](https://www.iconfinder.com/)
-- В качестве основного шрифта используется шрифт ["Play"](https://fonts.google.com/specimen/Play) из [google fonts](https://fonts.google.com). Заголовки: [Baltic Fonts](https://fontesk.com/baltic-fonts/) и [Practice](https://www.behance.net/gallery/96472071/PRACTICE-FREE-FONT). А вспомогательный шрифт [stark](https://fontstorage.com/ru/font/paulo-r/stark). В контактной форме использован шрифт [Caveat](https://fonts.google.com/specimen/Caveat)
+- В качестве основного шрифта используется шрифт ["Play"](https://fonts.google.com/specimen/Play) из [google fonts](https://fonts.google.com). Заголовки: [Baltic Fonts](https://fontesk.com/baltic-fonts/) и [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab). А вспомогательный шрифт [stark](https://fontstorage.com/ru/font/paulo-r/stark). В контактной форме использован шрифт [Caveat](https://fonts.google.com/specimen/Caveat)
