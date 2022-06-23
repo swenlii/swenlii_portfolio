@@ -113,14 +113,14 @@
 
   "my-blog":                   "My blog",
 
-  "article-h-1":               "Article #1",
-  "article-t-1":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
-  "article-h-2":               "Article #2",
-  "article-t-2":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
-  "article-h-3":               "Article #3",
-  "article-t-3":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
-  "article-h-4":               "Article #4",
-  "article-t-4":               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci...",
+  "article-h-1":               "HTML as thumbnail",
+  "article-t-1":               "HTML is the thumbnail of the page. Its basis. Like water for soup... I'll tell you a good recipe! With the help of tags, we outline the structure of the page, its text, pictures, the order of elements, then decorate it all with CSS, add ...",
+  "article-h-2":               "CSS. Magical transformation",
+  "article-t-2":               "In this article, we will talk about Cascading Style Sheets. CSS is a wizard's tool: the whole page without css is black and white, dull and there are no beautiful effects. But it's worth adding some css...",
+  "article-h-3":               "JavaScript. Language of professionals",
+  "article-t-3":               "Rounding out the great three web developer tools is JavaScript. With the help of HTML and CSS, we created a beautiful picture, maybe even something is moving on it! Now let's add...",
+  "article-h-4":               "Metadata",
+  "article-t-4":               "<head> is the tag that is not visible on the page, but is very important for the site. Let's find out how to set a site favicon, include CSS, and what exactly it is worth telling robots and search engines about your site.",
   "article-button":            "More in blog",
 
   "go-to-my-blog":             "Go to blog!",
@@ -233,9 +233,9 @@
   "story-h-3" : "How I got on the path of a developer.",
   "story-h-4" : "Places of work.",
 
-  "story-h-4-1" : "July 2018 - June 2019",
-  "story-h-4-2" : "July 2019 - November 2019",
-  "story-h-4-3" : "November 2020 - April 2021",
+  "story-h-4-1" : "AUG 2018 - JUN 2019",
+  "story-h-4-2" : "JUL 2019 - NOV 2019",
+  "story-h-4-3" : "NOV 2019 - DEC 2021",
 
   "story-op-1": "Position:",
   "story-op-2": "About work:",
