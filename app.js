@@ -56,7 +56,7 @@ app.post("/send", async function (request, response) {
     await transporter.sendMail({
       from: process.env.MAIL_USER,
       sender: decodeURIComponent(t.email),
-      to: process.env.MAIL_USER,
+      to: process.env.MAIL_SEND,
       subject: decodeURIComponent(t.title),
       html: "<p>Письмо направилено с формы контакта в портфолио</p><h1 style='color: #f80b0b'>" + decodeURIComponent(t.title) + "</h1><p><h3 style='color: #3f6efd'>Name sender:</h3>" + decodeURIComponent(t.name) + "</p><p><h3 style='color: #0b99f8'>Object:</h3>" + decodeURIComponent(t.object) + "</p><p><h3 style='color: #743ffd'>Email for answer:</h3>" + decodeURIComponent(t.email) + "</p><p><h3 style='color: #0bf889'>Text:</h3><pre>" + decodeURIComponent(t.mail) + "</pre></p>",
     }, (error, infoSuccess) => {
