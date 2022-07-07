@@ -25,6 +25,10 @@ router.get('/abilities', function(req, res, next) {
   res.render('abilities', { title: 'My abilities', lang: req.cookies.lang ? req.cookies.lang : 'en' });
 });
 
+router.get('/privacy-policy', function(req, res, next) {
+  res.render('privacy-policy', { title: 'Privacy policy', lang: req.cookies.lang ? req.cookies.lang : 'en' });
+});
+
 router.get('/materials', function(req, res, next) {
   res.render('terms', { title: 'Materials', lang: req.cookies.lang ? req.cookies.lang : 'en' });
 });

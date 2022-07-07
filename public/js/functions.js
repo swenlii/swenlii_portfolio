@@ -75,7 +75,8 @@ for(let i = 0; i < cards.length; i++){
 }
 
 function handleClick(myRadio) {
-    document.cookie = 'lang = ' + myRadio.value;
+    document.cookie = `lang=${myRadio.value}; expires=${new Date(new Date().getTime()+1000*60*60*24*365).toGMTString()}; path=/`;
+    
     window.location.reload();
 }
 

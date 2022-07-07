@@ -38,6 +38,24 @@
   },
   {
     "id": "work-3",
+    "title": "Swenlii - Personal Blog",
+    "mainimage": "swenliiblog-1.webp",
+    "images": [
+      "swenliiblog-2.webp",
+      "swenliiblog-3.webp",
+      "swenliiblog-4.webp",
+      "swenliiblog-5.webp"
+    ],
+    "name": "Личный блог",
+    "technologies": "wordpress, html, css, php, js",
+    "design": "Это платная тема на ThemeForest. Вы можете увидеть ее здесь: https://themeforest.net/item/keylin-wordpress-magazine-and-blog-theme/29954407",
+    "sale": "Не продается не дня коммерции.",
+    "description": "Это мой личный блог. Отличие от Conspectus в том, что Conspectus создан только для статей, просвященных Веб-разработке, и не важно, кто автор (хотя я не планирую добавлять авторов), тогда как этот личный блог создан для любых статей моего авторства. ",
+    "other": "<b>История создания: </b> Просто скопирую сюда историю с самого сайта: В начале у меня была идея создать свой профессиональный блог, где я буду делится своими знаниями с людьми. Но когда блог был готов, многие мои мысли не вмещались в рамку «профессионального блога», а поделится ими хотелось. Так мне захотелось создать свой второй блог «чисто для своих», где не будет ограничения по темам. Но времени на создание сайта было не много, а писать хотелось здесь и сейчас. Именно так за 1 день был создан данный сайт на базе wordpress. Название придумалось быстро: «Swenlii» — собственно мой никнейм. ",
+    "href" : "https://swenlii.epizy.com"
+  },
+  {
+    "id": "work-4",
     "title": "ВИЗИТКА",
     "mainimage": "visitka-1.webp",
     "images": [
@@ -54,7 +72,7 @@
     "href" : "/works/visitka"
   },
   {
-    "id": "work-4",
+    "id": "work-5",
     "title": "БЕЗ НАЗВАНИЯ #1",
     "mainimage": "astro-1.webp",
     "images": [
@@ -73,7 +91,7 @@
     "href" : "/works/astro-for-children"
   },
   {
-    "id": "work-5",
+    "id": "work-6",
     "title": "БЕЗ НАЗВАНИЯ #2",
     "mainimage": "deliv-1.webp",
     "images": [
@@ -90,7 +108,7 @@
     "href" : "https://github.com/swenlii/swenlii-delivery"
   },
   {
-    "id": "work-6",
+    "id": "work-7",
     "title": "БЕЗ НАЗВАНИЯ #3",
     "mainimage": "consult-1.webp",
     "name": "Сайт онлайн-консультаций. Рабочее название - Consultation",
@@ -104,7 +122,7 @@
     "href" : "https://github.com/swenlii/swenlii_med_consultation"
   },
   {
-    "id": "work-7",
+    "id": "work-8",
     "title": "BLACKWOOD",
     "mainimage": "blackwood-1.webp",
     "images": [
@@ -120,7 +138,7 @@
     "href" : "https://ru.blackwood.cloud/"
   },
   {
-    "id": "work-8",
+    "id": "work-9",
     "title": "SCAMMERCOIN",
     "mainimage": "scammercoin-1.webp",
     "images": [
@@ -136,7 +154,7 @@
     "href" : "https://scammercoin.com/"
   },
   {
-    "id": "work-9",
+    "id": "work-10",
     "title": "РАБОТЫ ПОД NDA",
     "name": "Засекреченно (под NDA)",
     "technologies": "html, css, js, vue, vuex, vue-router, vue-cli, node.js, express, webpack, scss",

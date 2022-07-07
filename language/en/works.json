@@ -38,6 +38,24 @@
   },
   {
     "id": "work-3",
+    "title": "Swenlii - Personal Blog",
+    "mainimage": "swenliiblog-1.webp",
+    "images": [
+      "swenliiblog-2.webp",
+      "swenliiblog-3.webp",
+      "swenliiblog-4.webp",
+      "swenliiblog-5.webp"
+    ],
+    "name": "My personal blog",
+    "technologies": "wordpress, html, css, php, js",
+    "design": "This is a paid theme in ThemeForest. You can see it here: https://themeforest.net/item/keylin-wordpress-magazine-and-blog-theme/29954407",
+    "sale": "Not sale.",
+    "description": "This is my personal blog. The difference from Conspectus is that Conspectus is only for Web Development related articles, and it doesn't matter who the author is (although I don't plan to add authors), while this personal blog is for any article I author.",
+    "other": "<b>History of creation: </b> I'll just copy here the story from the site itself: In the beginning, I had an idea to create my own professional blog, where I would share my knowledge with people. But when the blog was ready, many of my thoughts did not fit into the frame of a “professional blog”, but I wanted to share them. So I wanted to create my second blog \"purely for my own\", where there will be no restrictions on topics. But there was not much time to create the site, but I wanted to write here and now. This is how this site based on wordpress was created in 1 day. The name came up quickly: “Swenlii” is actually my nickname.",
+    "href" : "https://swenlii.epizy.com"
+  },
+  {
+    "id": "work-4",
     "title": "VISIT CARD",
     "mainimage": "visitka-1.webp",
     "images": [
@@ -54,7 +72,7 @@
     "href" : "/works/visitka"
   },
   {
-    "id": "work-4",
+    "id": "work-5",
     "title": "NO NAME #1",
     "mainimage": "astro-1.webp",
     "images": [
@@ -73,7 +91,7 @@
     "href" : "/works/astro-for-children"
   },
   {
-    "id": "work-5",
+    "id": "work-6",
     "title": "NO NAME #2",
     "mainimage": "deliv-1.webp",
     "images": [
@@ -90,7 +108,7 @@
     "href" : "github"
   },
   {
-    "id": "work-6",
+    "id": "work-7",
     "title": "NO NAME #3",
     "mainimage": "consult-1.webp",
     "name": "Online consultation site.  Working title is Consultation",
@@ -104,7 +122,7 @@
     "href" : "github"
   },
   {
-    "id": "work-7",
+    "id": "work-8",
     "title": "BLACKWOOD",
     "mainimage": "blackwood-1.webp",
     "images": [
@@ -120,7 +138,7 @@
     "href" : "https://ru.blackwood.cloud/"
   },
   {
-    "id": "work-8",
+    "id": "work-9",
     "title": "SCAMMERCOIN",
     "mainimage": "scammercoin-1.webp",
     "images": [
@@ -136,7 +154,7 @@
     "href" : "https://scammercoin.com/"
   },
   {
-    "id": "work-9",
+    "id": "work-10",
     "title": "WORKS WITH NDA",
     "name": "SECRET (with NDA)",
     "technologies": "html, css, js, vue, vuex, vue-router, vue-cli, node.js, express, webpack, scss",
