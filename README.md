@@ -6,7 +6,7 @@
 ![node-version](https://img.shields.io/badge/node->=16.15.1-green)
 
 <div align="center">
-<img src="public/images/screenshots/this-1.webp" width="500px">
+<img src="https://swenlii.github.io/img/projects/portfolio.png" width="700px">
 </div>
 
 ## ⚡Описание проекта
